@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+    to right,
+    #a74a1f,
+    #dc833c,
+    orange,
+    #f19c1e
+  );
+}
+
+.container {
+  min-width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px 30px;
+  color: #fff;
+  padding: 20px;
+  background-color: #282c34;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 40px;
+}
+
+.container .container1 h1 {
+  font-size: 40px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.container .container1 .input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.container .container1 .input-container input {
+  border: none;
+  padding: 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  outline: none;
+  font-size: 15px;
+  background-color: #ececec;
+}
+
+.container .container1 .input-container button {
+  border: none;
+  outline: none;
+  background-color: #ececec;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 400;
+  transition: 1s;
+}
+
+.container .container1 .input-container button:hover {
+  background-color: #25d366;
+}
+
+.mytask {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mytask h3 {
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.mytask .button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+
+.mytask .button-container h4 {
+  margin-left: 7px;
+}
+
+#update {
+  color: #d34a02;
+  transition: 1s;
+}
+#restore {
+  color: #25d366;
+  transition: 1s;
+}
+#delete {
+  color: red;
+  transition: 1s;
+}
+
+.mytask .button1 {
+  color: #d34a02;
+}
+.mytask .button2 {
+  color: #25d366;
+}
+
+.mytask .button3 {
+  color: red;
+}
+
+.mytask .button1:hover {
+  background-color: #d34a02;
+  color: #fff;
+}
+.mytask .button1:hover #update {
+  color: #fff;
+}
+
+.mytask .button2:hover {
+  background-color: #25d366;
+  color: #fff;
+}
+.mytask .button2:hover #restore {
+  color: #fff;
+}
+
+.mytask .button3:hover {
+  background-color: red;
+  color: #fff;
+}
+.mytask .button3:hover #delete {
+  color: #fff;
+}
+
+.mytask .tasks-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+  margin-bottom: 20px;
+  background-color: #282c34;
+  color: #fff;
+  font-size: 13px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.title {
+}
