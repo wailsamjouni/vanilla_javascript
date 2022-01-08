@@ -73,13 +73,39 @@ window.addEventListener('load',() => {
             todoItem.appendChild(deleteDiv);
             tasksContainer.appendChild(todoItem);
             
-            var button3 = document.querySelectorAll('.button3');
-            button3.forEach(item => {
+            var deleteButton = document.querySelectorAll('.button3');
+            deleteButton.forEach(item => {
                 item.addEventListener('click' ,function(){
                     this.parentNode.remove();
                 })
             }
             );
+
+            updateDiv.addEventListener('click',() =>{
+                if (updateTitle.innerHTML === 'Update') {
+                    taskInput.removeAttribute('readonly');
+                    taskInput.focus();
+                    updateTitle.innerHTML = 'Save';
+                    updateIcon.classList = '';
+                    updateIcon.classList += 'far fa-save';
+                    restoreDiv.style.pointerEvents = 'none'; 
+                    restoreDiv.style.opacity = '0.2';
+                } else {
+                    taskInput.setAttribute('readonly','readonly');
+                    updateTitle.innerHTML = 'Update';
+                    updateIcon.classList = '';
+                    updateIcon.classList += 'fas fa-pen-square';
+                    restoreDiv.style.pointerEvents = 'auto';
+                    restoreDiv.style.opacity = '1';
+                }
+            });
+
+            const currentValue = taskInput.value;
+            restoreDiv.addEventListener('click',() =>{
+                taskInput.value = currentValue;
+            });
+
+
 
 
             // tasksContainer.innerHTML += `
