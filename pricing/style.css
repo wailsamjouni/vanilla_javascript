@@ -1,0 +1,177 @@
+:root {
+  --white: #fff;
+  --div-color: #0b3847;
+  --orange: #f96600;
+  --red: #f90000;
+  --bg-color: #32363e;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #0b3847;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 70%;
+  height: 70%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 25px;
+  margin: 20px;
+}
+
+.month-year {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--div-color);
+  padding: 7px 15px;
+  border-radius: 20px;
+}
+
+.month-year button {
+  font-size: 15px;
+  padding: 5px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+
+.month-year .monthly {
+  background-color: var(--orange);
+}
+
+.month-year .yearly {
+  background-color: transparent;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.same {
+  padding: 30px 40px;
+  color: #fff;
+  background-color: #0b3847;
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  display: flex;
+  flex-direction: column;
+  min-height: 350px;
+  position: relative;
+}
+
+.same .title {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.same .price-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.same .price-container .price {
+  margin-right: 10px;
+  font-size: 40px;
+}
+
+.same .plan {
+  font-size: 15px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.same .per-month {
+  font-weight: 100;
+}
+
+.same .icons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10px 0;
+}
+
+.same h5 {
+  font-size: 19px;
+  font-weight: normal;
+}
+
+.files {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.files img {
+  margin-right: 10px;
+}
+
+.choose-plan {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.content .middle {
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translateX(-55%);
+  background-color: var(--bg-color);
+}
+
+.choose-first {
+  background-color: var(--orange);
+}
+
+.choose-middle {
+  background-color: var(--red);
+}
