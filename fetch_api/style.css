@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  /* height: auto; */
+  margin: 40px 60px;
+  background-color: white;
+  /* #272838 */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container {
+  transition: 2s;
+  background-color: black;
+  width: 80%;
+  /* height: 90vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  border: 4px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.container .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  color: orange;
+  background-color: black;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.container .title span {
+  color: white;
+}
+
+.container .button-container {
+  display: flex;
+  width: 45%;
+  justify-content: space-evenly;
+  align-items: center;
+  /* background-color: orange; */
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.container .button-container .buttons {
+  padding: 5px 15px;
+  border: none;
+  background-color: orange;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition-property: opacity, color;
+  transition-duration: 0.7s, 0.7s;
+}
+
+.container .button-container .buttons:hover {
+  opacity: 0.8;
+  color: white;
+}
+
+.container .content {
+  width: 100%;
+  padding: 10px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .content #fetch {
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  transition: 2s;
+  margin-bottom: 30px;
+  color: orange;
+}
+
+.container .content .data {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.data-element {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: 2px solid white;
+  gap: 20px;
+  cursor: pointer;
+  color: black;
+}
+
+.data-element h2:nth-child(1) {
+  color: orange;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 10px;
+  background-color: black;
+  transition: 1s;
+}
+
+.data-element h2:nth-child(1):hover {
+  background-color: orange;
+  color: black;
+}
+
+.data-element p {
+  font-size: 20px;
+  font-weight: 500;
+}
