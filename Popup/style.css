@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+    to right,
+    orange,
+    rgba(255, 166, 0, 0.919),
+    rgba(255, 166, 0, 0.803)
+  );
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.show-element {
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.7s;
+  margin: 40px 20px;
+  position: relative;
+}
+
+.show-element::after {
+  content: "Popup";
+  background-color: black;
+  color: white;
+  padding: 10px 40px;
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.7;
+  display: none;
+}
+
+.show-element:hover {
+  background-color: white;
+  color: black;
+}
+
+.show-element:hover::after {
+  display: block;
+}
+
+.message {
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  border-radius: 20px;
+  width: 400px;
+  border: 2px solid black;
+  display: block;
+  z-index: 4;
+}
+
+.hidden {
+  display: none;
+}
+
+.iconcontainer {
+  padding: 10px;
+  background-color: black;
+  position: absolute;
+  cursor: pointer;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 20px;
+}
+
+.icon {
+  color: orange;
+  /* position: absolute; */
+  /* right: 20px;
+  top: 20px; */
+}
+
+h2 {
+  color: orange;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  padding: 5px 20px;
+  border-radius: 20px;
+  font-size: 25px;
+}
+
+p {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.overlay {
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
