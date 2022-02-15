@@ -20,3 +20,12 @@ iconcontainer.addEventListener('click', () => {
 overlay.addEventListener('click', () => {
     hidePopup();
 })
+
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape'){
+        if (!message.classList.contains('hidden')){
+            message.classList.add('hidden');
+            overlay.classList.add('hidden');
+        }
+    }
+})
