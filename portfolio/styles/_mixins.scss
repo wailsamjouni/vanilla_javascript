@@ -1,0 +1,39 @@
+@import './variables';
+@mixin flexBox($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin cv-btn-style {
+    border-radius: 30px;
+    color: inherit;
+    font-weight: 500;
+    position: relative;
+    border: 2px solid $color-secondary;
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+
+@mixin before-style($title) {
+    content: $title;
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: -150%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: 500;
+    background-color: $color-secondary;
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    transition: $transition;
+    opacity: 0;
+}
