@@ -1,10 +1,11 @@
 @import './variables';
 @import './mixins';
+@import './media';
 header {
     color: var(--color-white);
     width: 100%;
     height: 100vh;
-    overflow: hidden;
+    // overflow: hidden;
     .header {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -35,6 +36,7 @@ header {
                 img {
                     width: 100%;
                     height: 100%;
+                    border-radius: 30px;
                     object-fit: cover;
                     filter: grayscale(100%);
                     &:hover {
@@ -53,24 +55,6 @@ header {
                     position: relative;
                     color: var(--color-secondary);
                     width: max-content;
-                    // &::before,
-                    // &::after {
-                    //     content: '';
-                    //     position: absolute;
-                    //     top: 0;
-                    //     left: 0;
-                    //     bottom: 0;
-                    //     right: 0;
-                    // }
-                    // &::before {
-                    //     animation: typeWriter 5s steps(14) forwards;
-                    //     background-color: $color-primary;
-                    // }
-                    // &::after {
-                    //     width: 0.125em;
-                    //     background-color: black;
-                    //     animation: typeWriter 6s steps(13) .07s forwards, blink 250ms steps(13) infinite;
-                    // }
                 }
             }
             p {

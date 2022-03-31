@@ -21,64 +21,64 @@
         background-color: var(--color-secondary);
         transition: $transition;
     }
-    .style__icon1 {
-        transition: $transition;
-        position: relative;
-        &::before {
-            @include before-style('home');
-        }
-        &:hover {
-            &::before {
-                opacity: 1;
-            }
-        }
-    }
-    .style__icon2 {
-        transition: $transition;
-        position: relative;
-        &::before {
-            @include before-style('about');
-        }
-        &:hover {
-            &::before {
-                opacity: 1;
-            }
-        }
-    }
-    .style__icon3 {
-        transition: $transition;
-        position: relative;
-        &::before {
-            @include before-style('portfolio');
-        }
-        &:hover {
-            &::before {
-                opacity: 1;
-            }
-        }
-    }
-    .style__icon4 {
-        transition: $transition;
-        position: relative;
-        &::before {
-            @include before-style('blogs');
-        }
-        &:hover {
-            &::before {
-                opacity: 1;
-            }
-        }
-    }
-    .style__icon5 {
-        transition: $transition;
-        position: relative;
-        &::before {
-            @include before-style('conact');
-        }
-        &:hover {
-            &::before {
-                opacity: 1;
-            }
-        }
-    }
+    // .style__icon1 {
+    //     transition: $transition;
+    //     position: relative;
+    //     &::before {
+    //         @include before-style('home');
+    //     }
+    //     &:hover {
+    //         &::before {
+    //             opacity: 1;
+    //         }
+    //     }
+    // }
+    // .style__icon2 {
+    //     transition: $transition;
+    //     position: relative;
+    //     &::before {
+    //         @include before-style('about');
+    //     }
+    //     &:hover {
+    //         &::before {
+    //             opacity: 1;
+    //         }
+    //     }
+    // }
+    // .style__icon3 {
+    //     transition: $transition;
+    //     position: relative;
+    //     &::before {
+    //         @include before-style('portfolio');
+    //     }
+    //     &:hover {
+    //         &::before {
+    //             opacity: 1;
+    //         }
+    //     }
+    // }
+    // .style__icon4 {
+    //     transition: $transition;
+    //     position: relative;
+    //     &::before {
+    //         @include before-style('blogs');
+    //     }
+    //     &:hover {
+    //         &::before {
+    //             opacity: 1;
+    //         }
+    //     }
+    // }
+    // .style__icon5 {
+    //     transition: $transition;
+    //     position: relative;
+    //     &::before {
+    //         @include before-style('conact');
+    //     }
+    //     &:hover {
+    //         &::before {
+    //             opacity: 1;
+    //         }
+    //     }
+    // }
 }

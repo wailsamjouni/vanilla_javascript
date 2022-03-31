@@ -1,0 +1,169 @@
+@import '../mixins';
+@import '../media';
+@include responsive-mode(mobil) {
+    // Header
+    header {
+        padding: 0;
+        .header {
+            grid-template-columns: 1fr;
+            padding-bottom: 96px;
+            &__left {
+                width: 100%;
+                .rectangle {
+                    display: none;
+                }
+                .profilImage {
+                    @include flexBox(center, center);
+                    margin-left: 0;
+                    width: 80%;
+                }
+            }
+            &__right {
+                padding-right: 0rem !important;
+                width: 90%;
+                margin: 0 auto;
+                h1 {
+                    font-size: 40px;
+                    padding-top: 32px;
+                    text-align: center;
+                }
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    // Settings///////////////////////////////////////////////////////////////////////
+    .setting {
+        padding: 2px;
+        top: 10px;
+        left: 30px;
+    }
+    /////Themes///////////////////////////////////////////////////////////////
+    .theme {
+        width: 60px;
+        height: 30px;
+        top: 10px;
+        right: 20px;
+        z-index: 20;
+        span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 30px;
+            height: 30px;
+        }
+    }
+    .toggle {
+        span {
+            left: 30px;
+        }
+    }
+    // Icons//////////////////////////////////////////////////////////////////
+    .container {
+        flex-direction: row;
+        top: auto;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+    }
+    ////////////Palette//////////////////////////////////////////////
+    .palette {
+        @include flexBox(center, center);
+        flex-wrap: wrap;
+        position: absolute;
+        z-index: 22;
+        padding: 20px;
+        border-radius: 20px;
+        gap: 15px;
+        h1 {
+            display: none;
+        }
+        h2 {
+            display: none;
+        }
+        &__close {
+            display: none;
+        }
+    }
+    .hidden {
+        display: none;
+    }
+    //////////About////////////////////////////////////////////////////////
+    .aboutSection {
+        flex-direction: column;
+        @include flexBox(flex-start, center);
+        &__left {
+            padding-right: 0;
+            text-align: center;
+            p {
+                line-height: 32px;
+                padding: 16px;
+            }
+        }
+        &__right {
+            grid-template-columns: 1fr;
+            padding-top: 40px;
+        }
+        &__skills {
+            .progress-bars {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    }
+    /////////////Timeline///////////////////////////////////////
+    .timeline {
+        grid-template-columns: 1fr;
+        padding-bottom: 96px;
+        padding: 32px;
+        .timeline__wrapper {
+            padding-bottom: 48px;
+            .timeline__icon {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+    //////////Portfolio/////////////////////////////////////////////////
+    .portfolios {
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 96px;
+        margin-top: 16px;
+    }
+    ////////////////////Contact////////////
+    .contact__right {
+        margin-bottom: 96px;
+        form {
+            .input {
+                // width: 100%;
+            }
+            div:nth-child(1) {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                 :last-child {
+                    margin-left: 0;
+                }
+            }
+            div:nth-child(4) {
+                @include flexBox(center, center);
+                button {
+                    @include cv-btn-style;
+                    background-color: inherit;
+                    cursor: pointer;
+                    span:nth-child(1) {
+                        padding: 0 32px;
+                        z-index: 1;
+                    }
+                    span:nth-child(2) {
+                        @include flexBox(center, center);
+                        background-color: var(--color-secondary);
+                        border-radius: 50%;
+                        padding: 16px;
+                        z-index: 1;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -12,6 +12,8 @@
 @import './palette';
 @import './setting';
 @import './overlay';
+@import './media';
+@import './devices/mobil';
 :root {
     --color-primary: #191d2b;
     --color-secondary: #ee4266;
@@ -54,7 +56,7 @@
 
 .activeSection {
     display: block;
-    // animation: sectionAnim 1.5s ease-in-out;
+    animation: sectionAnim 1s ease-in-out;
     @keyframes sectionAnim {
         0% {
             transform: translateY(-100%) scale(0);
@@ -136,5 +138,28 @@
         height: 1px;
         background-color: var(--color-grey-five);
         transform: translateX(-50%);
+    }
+}
+
+///////////Responsive////////////////////
+@include responsive-mode(mobil) {
+    .cvBtn {
+        padding-bottom: 96px;
+        margin-top: 30px;
+    }
+    .sectionTitle {
+        h2 {
+            font-size: 32px;
+            span {
+                font-size: 34px;
+            }
+            span:nth-child(2) {
+                opacity: 0.6;
+                font-size: 34px;
+            }
+        }
+    }
+    .section {
+        padding: 32px 40px !important;
     }
 }
