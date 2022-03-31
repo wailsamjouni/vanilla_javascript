@@ -15,6 +15,32 @@
 </head>
 
 <body class="body">
+    <div class="setting">
+        <i class="setting__icon fa-solid fa-gear fa-2x"></i>
+    </div>
+    <div class="overlay hidden">
+    </div>
+    <div class="palette hidden">
+        <span class="palette__toggle color1"></span>
+        <span class="palette__toggle color2"></span>
+        <span class="palette__toggle color3"></span>
+        <span class="palette__toggle color4"></span>
+        <span class="palette__toggle color5"></span>
+        <span class="palette__toggle color6"></span>
+        <span class="palette__toggle color7"></span>
+        <span class="palette__toggle color8"></span>
+        <span class="palette__toggle color9"></span>
+        <span class="palette__toggle color10"></span>
+        <div class="palette__close">
+            <i class="palette__icon fa-solid fa-xmark fa-2x"></i>
+        </div>
+        <h1>Choose your favorite <span>Theme.</span></h1>
+        <h2 id="randomize">Random Color</h2>
+    </div>
+    <div class="cursor"></div>
+    <div class="theme">
+        <span></span>
+    </div>
     <!-- Header -->
     <header class="section first activeSection" id="home">
         <div class="header">
@@ -32,7 +58,7 @@
                     I'm a software engineer specialised in frontend and backend development for complex scalable web apps. Want to know how I may help your project? Check out my project
                 </p>
                 <div class="cvBtn">
-                    <a href="">
+                    <a href="CV-up.pdf" download>
                         <span>Download CV</span>
                         <span><i class="fas fa-download"></i></span>
                     </a>
@@ -45,7 +71,7 @@
         <!-- Section 2 -->
         <section class="section second about" id="about">
             <div class="sectionTitle">
-                <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
+                <h2>About <span>me</span><span>my stats</span></h2>
             </div>
             <div class="aboutSection">
                 <div class="aboutSection__left">
@@ -55,7 +81,7 @@
                         exercitationem a, ipsum quidem quo enim natus accusamus labore dolores nam. Unde. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum non necessitatibus deleniti eum soluta.
                     </p>
                     <div class="cvBtn">
-                        <a href="">
+                        <a href="CV-up.pdf" download>
                             <span>Download CV</span>
                             <span><i class="fas fa-download"></i></span>
                         </a>
@@ -89,7 +115,7 @@
                 </div>
             </div>
             <div class="aboutSection__skills">
-                <h4 class="stat-title">My Skills</h4>
+                <h4 class="title__component">My Skills</h4>
                 <div class="progress-bars">
                     <div class="bar">
                         <p>html5</p>
@@ -165,11 +191,165 @@
                     </div>
                 </div>
             </div>
+            <h4 class="title__component">My Timeline</h4>
+            <!-- Experience -->
+            <div class="timeline">
+                <div class="timeline__wrapper">
+                    <div class="timeline__icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="timeline__duration">2010 - present</p>
+                    <h5>Web Developer<span> - Vircrosoft</span></h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
+                    </p>
+                </div>
+                <div class="timeline__wrapper">
+                    <div class="timeline__icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="timeline__duration">2008 - 2011</p>
+                    <h5>Software Engineer<span> - Boogle, Inc.</span></h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
+                    </p>
+                </div>
+                <div class="timeline__wrapper">
+                    <div class="timeline__icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="timeline__duration">2016 - 2017</p>
+                    <h5>C++ Programmer<span> - Slime Tech</span></h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
+                    </p>
+                </div>
+                <div class="timeline__wrapper">
+                    <div class="timeline__icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="timeline__duration">2009 - 2013</p>
+                    <h5>Business Degree<span> - Sussex University</span></h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
+                    </p>
+                </div>
+                <div class="timeline__wrapper">
+                    <div class="timeline__icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="timeline__duration">2013 - 2016</p>
+                    <h5>Computer Science Degree<span> - Brookes University</span></h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
+                    </p>
+                </div>
+                <div class="timeline__wrapper">
+                    <div class="timeline__icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="timeline__duration">2017 - present</p>
+                    <h5>3d Animation<span> - Brighton University</span></h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
+                    </p>
+                </div>
+            </div>
+            <!--  -->
         </section>
         <!-- Section 2 -->
-        <section class="section third portfolio" id="portfolio"></section>
+        <section class="section third portfolio" id="portfolio">
+            <div class="sectionTitle">
+                <h2>My <span>Portfolio</span><span>My Work</span></h2>
+            </div>
+            <div class="portfolios">
+                <div class="portfolios__item">
+                    <div class="image">
+                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80" alt="">
+                    </div>
+                    <div class="code">
+                        <h3>Project Source</h3>
+                        <div class="social">
+                            <a href="https://github.com/wailsamjouni">
+                                <i class="socialIconfab fab fa-github"></i>
+                            </a>
+                            <button href="#">See Live</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolios__item">
+                    <div class="image">
+                        <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+                    </div>
+                    <div class="code">
+                        <h3>Project Source</h3>
+                        <div class="social">
+                            <a href="https://github.com/wailsamjouni">
+                                <i class="socialIconfab fab fa-github"></i>
+                            </a>
+                            <button href="#">See Live</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolios__item">
+                    <div class="image">
+                        <img src="https://images.unsplash.com/photo-1520085601670-ee14aa5fa3e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+                    </div>
+                    <div class="code">
+                        <h3>Project Source</h3>
+                        <div class="social">
+                            <a href="https://github.com/wailsamjouni">
+                                <i class="socialIconfab fab fa-github"></i>
+                            </a>
+                            <button href="#">See Live</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolios__item">
+                    <div class="image">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt="">
+                    </div>
+                    <div class="code">
+                        <h3>Project Source</h3>
+                        <div class="social">
+                            <a href="https://github.com/wailsamjouni">
+                                <i class="socialIconfab fab fa-github"></i>
+                            </a>
+                            <button href="#">See Live</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
         <section class="section fourth blogs" id="blogs"></section>
-        <section class="section fivth contact" id="contact"></section>
+        <section class="section fivth contact" id="contact">
+            <div class="contact__wrapper">
+                <div class="sectionTitle">
+                    <h2>Contact <span>Me</span><span>Contact</span></h2>
+                </div>
+                <div class="contact__right">
+                    <form method="POST" action="#message">
+                        <div class="input ">
+                            <input type="text" required placeholder="YOUR NAME">
+                            <input type="email" required placeholder="YOUR EMAIL">
+                        </div>
+                        <div class="input">
+                            <input type="text" required placeholder="ENTER SUBJECT">
+                        </div>
+                        <div class="input">
+                            <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
+                        </div>
+                        <div class="">
+                            <button type="submit" href="#">
+                                <span>Send</span>
+                                <span><i class="fa-solid fa-paper-plane"></i></span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- Icons controller -->
     <div class="container">

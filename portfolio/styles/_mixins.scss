@@ -10,7 +10,7 @@
     color: inherit;
     font-weight: 500;
     position: relative;
-    border: 2px solid $color-secondary;
+    border: 2px solid var(--color-secondary);
     display: flex;
     align-self: flex-start;
     align-items: center;
@@ -30,7 +30,7 @@
     transform: translate(-50%, -50%);
     font-size: 20px;
     font-weight: 500;
-    background-color: $color-secondary;
+    background-color: var(--color-secondary);
     padding: 5px 10px;
     border-radius: 20px;
     text-transform: uppercase;

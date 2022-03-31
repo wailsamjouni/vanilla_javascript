@@ -1,0 +1,72 @@
+@import './variables';
+@import './mixins';
+.portfolios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 32px;
+    margin-top: 48px;
+    &__item {
+        padding: 10px;
+        position: relative;
+        .image {
+            border-radius: 20px;
+            img {
+                width: 100%;
+                height: 300px;
+                border-radius: 20px;
+                object-fit: cover;
+            }
+        }
+        .code {
+            @include flexBox(center, center);
+            width: 100%;
+            height: 100%;
+            background-color: var(--color-secondary);
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-radius: 20px;
+            flex-direction: column;
+            opacity: 0;
+            transform: scale(0);
+            transition: $transition;
+            h3 {
+                font-size: 24px;
+                color: var(--color-white);
+                margin-bottom: 24px;
+            }
+            .social {
+                @include flexBox(center, center);
+                a {
+                    @include flexBox(center, center);
+                    background-color: var(--color-primary);
+                    border-radius: 50%;
+                    width: 50px;
+                    height: 50px;
+                    margin: 0 16px;
+                    cursor: pointer;
+                    transition: $transition;
+                    .socialIconfab {
+                        font-size: 24px;
+                        color: var(--color-white);
+                        margin: 0 16px;
+                    }
+                }
+                button {
+                    background-color: var(--color-primary);
+                    padding: 10px 20px;
+                    border-radius: 20px;
+                    border: none;
+                    outline: none;
+                    color: inherit;
+                    cursor: pointer;
+                    font-size: 18px;
+                }
+            }
+        }
+        &:hover .code {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+}

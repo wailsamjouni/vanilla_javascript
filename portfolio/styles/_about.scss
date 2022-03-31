@@ -1,0 +1,111 @@
+@import './variables';
+@import './mixins';
+.aboutSection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 48px;
+    padding-bottom: 80px;
+    &__left {
+        padding-right: 80px;
+        h4 {
+            color: var(--color-white);
+            font-size: 32px;
+            text-transform: uppercase;
+        }
+        p {
+            line-height: 32px;
+            padding: 16px;
+            color: var(--color-grey-one);
+        }
+    }
+    &__right {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 32px;
+        .about__item {
+            border: 1px solid var(--color-grey-five);
+            border-radius: 10px;
+            transition: $custome-shadow1;
+            &:hover {
+                cursor: pointer;
+                transform: translateY(-5px);
+                border: 1px solid var(--color-secondary);
+                box-shadow: $custome-shadow;
+            }
+            div {
+                padding: 24px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                p:nth-child(1) {
+                    font-size: 48px;
+                    font-weight: 700;
+                    color: var(--color-secondary);
+                }
+                p:nth-child(2) {
+                    padding-left: 48px;
+                    text-transform: uppercase;
+                    font-size: 20px;
+                    color: var(--color-grey-one);
+                    letter-spacing: 2px;
+                }
+            }
+        }
+    }
+    &__skills {
+        padding-bottom: 64px;
+        .progress-bars {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 32px;
+            .bar {
+                display: flex;
+                flex-direction: column;
+                p {
+                    text-transform: uppercase;
+                    font-weight: 500;
+                }
+                .progressContainer {
+                    display: flex;
+                    align-items: center;
+                    p {
+                        color: var(--color-grey-two);
+                    }
+                    .language {
+                        width: 100%;
+                        height: 8px;
+                        background-color: var(--color-grey-four);
+                        margin-left: 16px;
+                        position: relative;
+                        span {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            height: 100%;
+                            background-color: var(--color-secondary);
+                            transition: $transition;
+                            width: 60%;
+                        }
+                        .html {
+                            width: 80%;
+                        }
+                        .css {
+                            width: 85%;
+                        }
+                        .js,
+                        .tailwind,
+                        .java,
+                        .react {
+                            width: 70%;
+                        }
+                        .sass,
+                        .boot {
+                            width: 75%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
