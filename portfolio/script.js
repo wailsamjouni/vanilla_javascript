@@ -124,4 +124,3 @@ randomTheme.addEventListener('click', () => {
 function generateNumber() {
     return Math.floor(Math.random() * colorsArray.length)
 }
-//////////////////////////////////////////////////////////////////////////

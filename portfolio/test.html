@@ -1,4 +1,4 @@
-<?php 
+<!-- <?php 
 if(isset($_POST['email'])) {
   echo "<a name='message'></a>";
     $to = "yassine.berqiqch@gmail.com"; // this is your Email address
@@ -18,4 +18,35 @@ else {
     echo "Error";
   }
 }
-?>
+?> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="div1">
+        <h1 class="h1h1">Wail Samjouni</h1>
+    </div>
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: '70px',
+            duration: 2500,
+            delay: 400
+        });
+        ScrollReveal().reveal('.h1h1', {
+            delay: 500,
+            origin: 'left'
+        });
+    </script>
+</body>
+
+</html>

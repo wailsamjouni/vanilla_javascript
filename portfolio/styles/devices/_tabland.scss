@@ -1,0 +1,58 @@
+    @import '../mixins';
+    @import '../media';
+    @include responsive-mode(tab-land) {
+        // Header
+        header {
+            padding: 0;
+            .header {
+                &__left {
+                    .profilImage {
+                        @include flexBox(center, center);
+                        margin-left: 0;
+                        width: 80%;
+                    }
+                }
+                &__right {
+                    padding-right: 144px;
+                    h1 {
+                        font-size: 48px;
+                        padding-top: 32px;
+                        text-align: center;
+                    }
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        ////////////Palette//////////////////////////////////////////////
+        .palette {
+            @include flexBox(center, center);
+            flex-wrap: wrap;
+            h1 {
+                font-size: 25px;
+            }
+            h2 {
+                padding: 5px 10px;
+                font-size: 20px;
+            }
+            &__close {
+                padding: 5px 10px;
+            }
+        }
+        .hidden {
+            display: none;
+        }
+        //////////About////////////////////////////////////////////////////////
+        .aboutSection {
+            grid-template-columns: repeat(2, 1fr);
+            &__left {
+                padding-right: 0;
+                text-align: center;
+                p {
+                    line-height: 32px;
+                    padding: 16px;
+                }
+            }
+        }
+    }

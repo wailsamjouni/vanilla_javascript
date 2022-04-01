@@ -14,6 +14,8 @@
 @import './overlay';
 @import './media';
 @import './devices/mobil';
+@import './devices/tabport';
+@import './devices/tabland';
 :root {
     --color-primary: #191d2b;
     --color-secondary: #ee4266;
@@ -161,5 +163,57 @@
     }
     .section {
         padding: 32px 40px !important;
+    }
+}
+
+@media only screen and (min-width:800px) {
+    .section {
+        padding: 32px 40px;
+    }
+}
+
+@include responsive-mode(mobilx) {
+    .aboutSection {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 32px;
+        &__left {
+            padding-right: 0;
+            text-align: center;
+        }
+        &__skills {
+            .progress-bars {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+    .palette {
+        @include flexBox(center, center);
+        flex-wrap: wrap;
+        h1 {
+            font-size: 15px;
+            span {
+                font-size: inherit;
+            }
+        }
+        h2 {
+            font-size: 15px;
+        }
+        &__close {
+            padding: 5px 10px;
+        }
+    }
+    .hidden {
+        display: none;
+    }
+}
+
+@include responsive-mode(tab-port) {
+    .section {
+        padding: 48px 260px;
+    }
+    .cvBtn {
+        padding-bottom: 96px;
+        margin-top: 30px;
     }
 }

@@ -1,0 +1,77 @@
+@import '../mixins';
+@import '../media';
+@include responsive-mode(tab-port) {
+    // Header
+    header {
+        padding: 0;
+        .header {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            &__right {
+                padding-right: 40px;
+                width: 90%;
+                margin: 0 auto;
+                h1 {
+                    font-size: 48px;
+                    padding-top: 32px;
+                    text-align: center;
+                }
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    // Icons//////////////////////////////////////////////////////////////////
+    .container {
+        flex-direction: column;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+    ////////////Palette//////////////////////////////////////////////
+    .palette {
+        @include flexBox(center, center);
+        flex-wrap: wrap;
+        h1 {
+            font-size: 15px;
+            span {
+                font-size: inherit;
+            }
+        }
+        h2 {
+            font-size: 15px;
+        }
+        &__close {
+            padding: 5px 10px;
+        }
+    }
+    .hidden {
+        display: none;
+    }
+    //////////About////////////////////////////////////////////////////////
+    .aboutSection {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+        &__left {
+            padding-right: 0;
+            text-align: center;
+            p {
+                line-height: 32px;
+                padding: 16px;
+            }
+        }
+        &__skills {
+            .progress-bars {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+    .portfolios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /////////////Timeline///////////////////////////////////////
+    .timeline {
+        grid-template-columns: 1fr, 1fr;
+    }
+}

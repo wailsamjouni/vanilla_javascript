@@ -3,11 +3,11 @@
     position: fixed;
     background-color: var(--color-secondary);
     display: block;
-    width: 80px;
-    height: 40px;
+    width: 60px;
+    height: 30px;
     border-radius: 60px;
-    top: 30px;
-    right: 30px;
+    top: 10px;
+    right: 20px;
     z-index: 20;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -15,8 +15,8 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
         border-radius: 50%;
         background-color: var(--color-primary);
         transform: scale(0.9);
@@ -27,7 +27,7 @@
 
 .toggle {
     span {
-        left: 40px;
+        left: 30px;
         background-color: var(--color-white);
         animation: anim 1.5s ease-in-out;
         @keyframes anim {
@@ -45,14 +45,14 @@
 }
 
 .light__mode {
-    --color-primary: #191d2b;
-    --color-secondary: #ee4266;
-    --color-white: #FFFFFF;
-    --color-black: #000;
-    --color-grey-zero: #f8f8f8;
-    --color-grey-one: #dbe1e8;
-    --color-grey-two: #b2becd;
-    --color-grey-three: #6c7983;
+    --color-primary: #ffffff;
+    --color-secondary: #0077b6;
+    --color-white: #000;
+    --color-black: #FFFFFF;
+    --color-grey-zero: #454e56;
+    --color-grey-one: #2a2e35;
+    --color-grey-two: #6c7983;
+    --color-grey-three: #b2becd;
     --color-grey-four: #454e56;
-    --color-grey-five: #2a2e35;
+    --color-grey-five: #dbe1e8;
 }

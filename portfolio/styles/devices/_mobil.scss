@@ -34,31 +34,6 @@
         }
     }
     // Settings///////////////////////////////////////////////////////////////////////
-    .setting {
-        padding: 2px;
-        top: 10px;
-        left: 30px;
-    }
-    /////Themes///////////////////////////////////////////////////////////////
-    .theme {
-        width: 60px;
-        height: 30px;
-        top: 10px;
-        right: 20px;
-        z-index: 20;
-        span {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 30px;
-            height: 30px;
-        }
-    }
-    .toggle {
-        span {
-            left: 30px;
-        }
-    }
     // Icons//////////////////////////////////////////////////////////////////
     .container {
         flex-direction: row;
@@ -91,8 +66,7 @@
     }
     //////////About////////////////////////////////////////////////////////
     .aboutSection {
-        flex-direction: column;
-        @include flexBox(flex-start, center);
+        grid-template-columns: repeat(1, 1fr);
         &__left {
             padding-right: 0;
             text-align: center;
@@ -104,9 +78,11 @@
         &__right {
             grid-template-columns: 1fr;
             padding-top: 40px;
+            .about__item {}
         }
         &__skills {
             .progress-bars {
+                width: 100%;
                 grid-template-columns: repeat(1, 1fr);
             }
         }
