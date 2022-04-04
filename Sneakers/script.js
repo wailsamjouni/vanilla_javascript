@@ -118,3 +118,38 @@ productSize.forEach(size => {
         size.style.color = 'white';
     });
 })
+
+const closeIcon = document.querySelector('.pay__closeicon');
+const productBuy = document.querySelector('.product__buy');
+const payComponent = document.querySelector('.pay');
+const overlay = document.querySelector('.overlay');
+
+const hidePopup = () => {
+    payComponent.classList.add('hidden');
+    overlay.classList.add('hidden');
+}
+
+const showPopup = () => {
+    payComponent.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+}
+
+productBuy.addEventListener('click', () => {
+    showPopup();
+})
+
+closeIcon.addEventListener('click', () => {
+    hidePopup();
+})
+
+overlay.addEventListener('click', () => {
+    hidePopup();
+})
+
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+        if (!payComponent.classList.contains('hidden')) {
+            hidePopup();
+        }
+    }
+})

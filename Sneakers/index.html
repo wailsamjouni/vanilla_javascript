@@ -102,7 +102,6 @@
         </div>
     </div>
     <div class="product" id="product">
-
         <img class="product__image" src="./img/air.png" alt="">
         <div class="product__details">
             <h1 class="product__name">Air Jordan</h1>
@@ -126,28 +125,30 @@
             Order Now!
         </button>
         </div>
-    </div>
-    <div class="pay">
-        <h1 class="pay__title">Personal Information</h1>
-        <label>Firstname and Lastname</label>
-        <input class="pay__infos" type="text" placeholder="Max Mustermann">
-        <label>Phone Number</label>
-        <input class="pay__infos" type="text" placeholder="+49 234 546 00 00">
-        <label>Address</label>
-        <input class="pay__infos" type="text" placeholder="Friedrich Str. 87">
-        <h1 class="pay__title">Payment Method</h1>
-        <div class="pay__methods">
-            <i class="fa-brands fa-paypal"></i>
-            <i class="fa-brands fa-amazon-pay fa-2x"></i>
-            <i class="fa-brands fa-apple-pay fa-2x"></i>
-            <i class="fa-brands fa-google-pay fa-2x"></i>
+        <div class="pay hidden">
+            <h1 class="pay__title">Personal Information</h1>
+            <label>Firstname and Lastname</label>
+            <input class="pay__infos" type="text" placeholder="Max Mustermann">
+            <label>Phone Number</label>
+            <input class="pay__infos" type="text" placeholder="+49 234 546 00 00">
+            <label>Address</label>
+            <input class="pay__infos" type="text" placeholder="Friedrich Str. 87">
+            <h1 class="pay__title">Payment Method</h1>
+            <div class="pay__methods">
+                <i class="methodicons fa-brands fa-paypal fa-3x"></i>
+                <i class="methodicons fa-brands fa-amazon-pay fa-3x"></i>
+                <i class="methodicons fa-brands fa-apple-pay fa-3x"></i>
+                <i class="methodicons fa-brands fa-google-pay fa-3x"></i>
+            </div>
+            <div class="button__wrapper">
+                <button class="pay__btn">Pay</button>
+            </div>
+            <div class="pay__closeicon">
+                <i class="close fa-solid fa-xmark fa-2x"></i>
+            </div>
         </div>
-        <button class="pay__btn">Pay</button>
-        <div class="pay__closeicon">
-            <i class="fa-solid fa-xmark fa-2x"></i>
-        </div>
+        <div class="overlay hidden"></div>
     </div>
-
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>

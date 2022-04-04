@@ -361,14 +361,122 @@ nav .modelle h3:hover {
 
 .pay {
     color: white;
-    background-color: orange;
+    background-color: white;
     width: 600px;
-    height: 600px;
+    height: 550px;
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     margin: auto;
-    z-index: 20;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 60px;
+    border-radius: 20px;
+    z-index: 999;
+    /* display: none; */
+}
+
+.pay__title {
+    font-size: 30px;
+    color: #6c757d;
+    margin: 10px 0;
+}
+
+label {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.pay__closeicon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: grey;
+    border-top-right-radius: 20px;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+.pay__closeicon:hover {
+    background-color: black;
+}
+
+.close {
+    color: white;
+}
+
+.pay__infos {
+    border: none;
+    color: black;
+    outline: none;
+    margin: 10px 0;
+    padding: 10px;
+    border-bottom: 2px solid grey;
+}
+
+::placeholder {
+    color: grey;
+    font-size: 20px;
+}
+
+.pay__methods {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #e9ecef;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.methodicons {
+    cursor: pointer;
+}
+
+.button__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pay__btn {
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    background-color: black;
+    color: #e9ecef;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.pay__btn:hover {
+    background-color: #e9ecef;
+    color: black;
+}
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hidden {
+    display: none;
 }
