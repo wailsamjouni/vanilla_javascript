@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar1">
+            <div class="logo">
+                <h1><span>.</span>Shoes</h1>
+            </div>
+            <div class="searchbar">
+                <input type="text" class="search" placeholder="Search your shoes">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="newcollection"><a href="#">New Arrivals</a></div>
+        </div>
+        <div class="modelle">
+            <h3 class="modelItem active">Air Jordan</h3>
+            <h3 class="modelItem">Air Force</h3>
+            <h3 class="modelItem">Air Max</h3>
+            <h3 class="modelItem">Mercurial</h3>
+            <h3 class="modelItem">Blazer</h3>
+        </div>
+    </nav>
+    <div class="imageSlider">
+        <div class="wrapper">
+            <div class="item">
+                <div class="decoration1 decoration"></div>
+                <img src="./img//air.png" alt="">
+                <h1 class="title">Air Jordan new season</h1>
+                <h3 class="price">$135</h3>
+                <a href="#product">
+                    <button class="order">Order now</button>
+                </a>
+            </div>
+            <div class="item">
+                <div class="decoration2 decoration"></div>
+                <img src="./img//crater.png" alt="">
+                <h1 class="title">Air Force new season</h1>
+                <h3 class="price">$179</h3>
+                <a href="#product">
+                    <button class="order">Order now</button>
+                </a>
+            </div>
+            <div class="item">
+                <div class="decoration3 decoration"></div>
+                <img src="./img//jordan.png" alt="">
+                <h1 class="title">Air Max new season</h1>
+                <h3 class="price">$159</h3>
+                <a href="#product">
+                    <button class="order">Order now</button>
+                </a>
+            </div>
+            <div class="item">
+                <div class="decoration4 decoration"></div>
+                <img src="./img//hippie.png" alt="">
+                <h1 class="title">Mercurial new season</h1>
+                <h3 class="price">$99</h3>
+                <a href="#product">
+                    <button class="order">Order now</button>
+                </a>
+            </div>
+            <div class="item">
+                <div class="decoration5 decoration"></div>
+                <img src="./img//blazer.png" alt="">
+                <h1 class="title">Blazer new season</h1>
+                <h3 class="price">$119</h3>
+                <a href="#product">
+                    <button class="order">Order now</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="properties">
+        <div class="property">
+            <i class="icon fa-solid fa-truck-fast fa-4x"></i>
+            <span class="title" n>Supply</span>
+            <span class="description">Lorem ipsum dolor sit amet consectetur.</span>
+        </div>
+        <div class="property">
+            <i class="icon fa-solid fa-gift fa-4x"></i>
+            <span class="title">Gift</span>
+            <span class="description">Lorem ipsum dolor sit amet consectetur.</span>
+        </div>
+        <div class="property">
+            <i class="icon fa-solid fa-rotate-left fa-4x"></i>
+            <span class="title">Return</span>
+            <span class="description">Lorem ipsum dolor sit amet consectetur.</span>
+        </div>
+        <div class="property">
+            <i class="icon fa-solid fa-message fa-4x"></i>
+            <span class="title">Contact</span>
+            <span class="description">Lorem ipsum dolor sit amet consectetur.</span>
+        </div>
+    </div>
+    <div class="product" id="product">
+
+        <img class="product__image" src="./img/air.png" alt="">
+        <div class="product__details">
+            <h1 class="product__name">Air Jordan</h1>
+            <h2 class="product__price">$135</h2>
+            <p class="product__description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi itaque deleniti veniam. Quisquam doloribus distinctio nam, voluptate recusandae debitis nihil?
+            </p>
+
+            <div class="product__colors">
+                <div class="product__color"></div>
+                <div class="product__color"></div>
+
+            </div>
+            <div class="product__sizes">
+                <div class="product__size">39</div>
+                <div class="product__size">40</div>
+                <div class="product__size">41</div>
+                <div class="product__size">42</div>
+            </div>
+            <button class="product__buy">
+            Order Now!
+        </button>
+        </div>
+    </div>
+    <div class="pay">
+        <h1 class="pay__title">Personal Information</h1>
+        <label>Firstname and Lastname</label>
+        <input class="pay__infos" type="text" placeholder="Max Mustermann">
+        <label>Phone Number</label>
+        <input class="pay__infos" type="text" placeholder="+49 234 546 00 00">
+        <label>Address</label>
+        <input class="pay__infos" type="text" placeholder="Friedrich Str. 87">
+        <h1 class="pay__title">Payment Method</h1>
+        <div class="pay__methods">
+            <i class="fa-brands fa-paypal"></i>
+            <i class="fa-brands fa-amazon-pay fa-2x"></i>
+            <i class="fa-brands fa-apple-pay fa-2x"></i>
+            <i class="fa-brands fa-google-pay fa-2x"></i>
+        </div>
+        <button class="pay__btn">Pay</button>
+        <div class="pay__closeicon">
+            <i class="fa-solid fa-xmark fa-2x"></i>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
