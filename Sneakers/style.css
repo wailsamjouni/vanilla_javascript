@@ -53,10 +53,6 @@ nav .searchbar {
     border-radius: 10px;
 }
 
-::placeholder {
-    color: white;
-}
-
 nav .searchbar .search {
     background-color: transparent;
     border: none;
@@ -258,7 +254,7 @@ nav .modelle h3:hover {
 
 .product {
     color: white;
-    margin: 30px;
+    margin: 30px 0;
     height: 100vh;
     width: 100%;
     clip-path: polygon(0 1%, 100% 15%, 100% 100%, 0 100%);
@@ -422,11 +418,12 @@ label {
     margin: 10px 0;
     padding: 10px;
     border-bottom: 2px solid grey;
+    font-size: 15px;
 }
 
 ::placeholder {
-    color: grey;
-    font-size: 20px;
+    color: black;
+    font-size: 15px;
 }
 
 .pay__methods {
@@ -479,4 +476,339 @@ label {
 
 .hidden {
     display: none;
+}
+
+
+/* Gallery */
+
+.gallery {
+    display: flex;
+    padding: 40px;
+    gap: 20px;
+    color: white;
+}
+
+.gallery__item {
+    flex: 1;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.gallery__img {
+    width: 100%;
+}
+
+.gallery__title {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+
+/* Season */
+
+.season {
+    display: flex;
+    color: white;
+    /* position: relative; */
+}
+
+.season__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    gap: 40px;
+}
+
+.season__title1 {
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.season__title2,
+.season__title3 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.season__img {
+    width: 100%;
+    width: 500px;
+}
+
+.season__btn {
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-weight: 700;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+.season__btn:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+
+/* Footer */
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+    background-color: #e9ecef;
+    padding: 10px;
+}
+
+.footer__left,
+.footer__midlle {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.footer__title {
+    font-size: 25px;
+    font-weight: 600;
+    border-bottom: 1px solid gray;
+}
+
+.footer__list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer__listitem {
+    font-size: 20px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.footer__listitem:hover {
+    opacity: 1;
+}
+
+.footer__socialmedia {
+    display: flex;
+    gap: 20px;
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
+}
+
+.footer__socialmedia:hover {
+    background-color: #e9ecef;
+}
+
+.footer__socialmedia:hover .footer__icons {
+    color: black;
+}
+
+.footer__icons {
+    color: white;
+    cursor: pointer;
+}
+
+.footer__right {
+    padding: 15px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.footer__input {
+    border: none;
+    outline: none;
+    background-color: #e9ecef;
+    padding: 10px;
+}
+
+.footer__btn {
+    transition: all .5s ease-in-out;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    font: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: transparent;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.footer__btn:hover {
+    background-color: #e9ecef;
+    color: black;
+}
+
+@media screen and (max-width:900px) {
+    nav {
+        padding: 20px;
+    }
+    nav .searchbar {
+        display: none;
+    }
+    nav .modelle {
+        flex-wrap: wrap;
+    }
+    .arrivals {
+        font-size: 15px;
+    }
+    nav .logo {
+        font-size: 15px;
+    }
+    .modelItem {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .imageSlider {
+        clip-path: none;
+    }
+    .imageSlider .wrapper .item img {
+        width: 80%;
+    }
+    .title {
+        display: none;
+    }
+    .imageSlider .wrapper .item .price {
+        top: unset;
+        bottom: 0;
+        left: 10px;
+        padding: 5px 10px;
+        font-size: 25px;
+    }
+    .imageSlider .wrapper .item .decoration {
+        width: 100%;
+        height: 100%;
+    }
+    .imageSlider .wrapper .item .order {
+        right: 20px;
+        bottom: 0;
+        z-index: 2;
+        padding: 5px 10px;
+        font-size: 20px;
+    }
+    /* Properties */
+    .properties {
+        flex-direction: column;
+    }
+    /* Product */
+    .product {
+        height: auto;
+        clip-path: none;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .product__image {
+        width: 80%;
+    }
+    .product__details {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: -60px;
+    }
+    .product__name {
+        font-size: 40px;
+        margin: 10px 5px;
+    }
+    .product__price {
+        font-size: 25px;
+        padding: 10px 5px;
+        margin: 10px 5px;
+    }
+    .product__description {
+        font-size: 15px;
+        margin: 5px 0;
+        text-align: center;
+    }
+    .product__colors,
+    .product__sizes {
+        gap: 10px;
+        margin: 10px 5px;
+    }
+    .product__color {
+        width: 35px;
+        height: 35px;
+    }
+    .product__size {
+        padding: 5px 10px;
+        font-weight: 400;
+    }
+    .product__buy {
+        padding: 5px 10px;
+        font-size: 20px;
+        margin: 20px;
+    }
+    .pay {
+        width: 85%;
+    }
+    .pay__title {
+        font-size: 25px;
+    }
+    .pay__closeicon {
+        padding: 10px;
+    }
+    .pay__methods {
+        padding: 10px;
+        margin: 20px;
+    }
+    .gallery {
+        display: none;
+    }
+    .season {
+        flex-direction: column;
+        padding: 0;
+    }
+    .season__item {
+        width: 100%;
+        margin: 20px;
+    }
+    .season__title1 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .season__title2,
+    .season__title3 {
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .season__img {
+        width: 90%;
+    }
+    .season__btn {
+        padding: 5px 10px;
+        font-size: 20px;
+    }
+    .footer {
+        flex-direction: column;
+    }
+    .footer__left {
+        padding: 20px;
+        align-items: center;
+    }
+    .footer__title {
+        border: none;
+    }
+    .footer__socialmedia {
+        margin: 20px;
+    }
+    .footer__right {}
 }

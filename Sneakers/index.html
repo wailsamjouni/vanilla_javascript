@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <nav>
+    <nav id="nav">
         <div class="navbar1">
             <div class="logo">
                 <h1><span>.</span>Shoes</h1>
@@ -20,7 +20,7 @@
                 <input type="text" class="search" placeholder="Search your shoes">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
-            <div class="newcollection"><a href="#">New Arrivals</a></div>
+            <div class="newcollection"><a class="arrivals" href="#">New Arrivals</a></div>
         </div>
         <div class="modelle">
             <h3 class="modelItem active">Air Jordan</h3>
@@ -81,22 +81,22 @@
     </div>
     <div class="properties">
         <div class="property">
-            <i class="icon fa-solid fa-truck-fast fa-4x"></i>
+            <i class="icon fa-solid fa-truck-fast fa-3x"></i>
             <span class="title" n>Supply</span>
             <span class="description">Lorem ipsum dolor sit amet consectetur.</span>
         </div>
         <div class="property">
-            <i class="icon fa-solid fa-gift fa-4x"></i>
+            <i class="icon fa-solid fa-gift fa-3x"></i>
             <span class="title">Gift</span>
             <span class="description">Lorem ipsum dolor sit amet consectetur.</span>
         </div>
         <div class="property">
-            <i class="icon fa-solid fa-rotate-left fa-4x"></i>
+            <i class="icon fa-solid fa-rotate-left fa-3x"></i>
             <span class="title">Return</span>
             <span class="description">Lorem ipsum dolor sit amet consectetur.</span>
         </div>
         <div class="property">
-            <i class="icon fa-solid fa-message fa-4x"></i>
+            <i class="icon fa-solid fa-message fa-3x"></i>
             <span class="title">Contact</span>
             <span class="description">Lorem ipsum dolor sit amet consectetur.</span>
         </div>
@@ -135,10 +135,10 @@
             <input class="pay__infos" type="text" placeholder="Friedrich Str. 87">
             <h1 class="pay__title">Payment Method</h1>
             <div class="pay__methods">
-                <i class="methodicons fa-brands fa-paypal fa-3x"></i>
-                <i class="methodicons fa-brands fa-amazon-pay fa-3x"></i>
-                <i class="methodicons fa-brands fa-apple-pay fa-3x"></i>
-                <i class="methodicons fa-brands fa-google-pay fa-3x"></i>
+                <i class="methodicons fa-brands fa-paypal fa-1x"></i>
+                <i class="methodicons fa-brands fa-amazon-pay fa-2x"></i>
+                <i class="methodicons fa-brands fa-apple-pay fa-2x"></i>
+                <i class="methodicons fa-brands fa-google-pay fa-2x"></i>
             </div>
             <div class="button__wrapper">
                 <button class="pay__btn">Pay</button>
@@ -149,6 +149,68 @@
         </div>
         <div class="overlay hidden"></div>
     </div>
+    <div class="gallery">
+        <div class="gallery__item">
+            <h1 class="gallery__title">Just Do it</h1>
+            <img class="gallery__img" src="https://images.unsplash.com/photo-1630497971131-26522ce57cc3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="">
+        </div>
+        <div class="gallery__item">
+            <img class="gallery__img" src="https://images.unsplash.com/photo-1599069692326-7eeb159e6991?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="">
+            <h1 class="gallery__title">Just Try it</h1>
+        </div>
+        <div class="gallery__item">
+            <h1 class="gallery__title">Just Try it</h1>
+            <img class="gallery__img" src="https://images.unsplash.com/photo-1590330297626-d7aff25a0431?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="">
+        </div>
+    </div>
+    <div class="season">
+        <div class="season__item">
+            <img class="season__img" src="https://images.unsplash.com/photo-1596936248374-dd8478d4e5b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="">
+        </div>
+        <div class="season__item">
+            <h4 class="season__title1">Sommer new Arrivals</h4>
+            <h2 class="season__title2">New Season</h2>
+            <h1 class="season__title3">New Collection</h1>
+            <a href="#nav">
+                <button class="season__btn">Choose your style</button>
+            </a>
+        </div>
+        <div class="season__item">
+            <img class="season__img" src="https://images.unsplash.com/photo-1542674684-fba3fa06625b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="">
+        </div>
+        <span class="season__deco"></span><span class="season__deco"></span><span class="season__deco"></span>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="footer__left">
+                <h1 class="footer__title">About Us</h1>
+                <ul class="footer__list">
+                    <li class="footer__listitem">Contact</li>
+                    <li class="footer__listitem">Company</li>
+                    <li class="footer__listitem">Stores</li>
+                    <li class="footer__listitem">Careers</li>
+                </ul>
+            </div>
+            <div class="footer__midlle">
+                <h1 class="footer__title">Links</h1>
+                <ul class="footer__list">
+                    <li class="footer__listitem">Support</li>
+                    <li class="footer__listitem">FAQ</li>
+                    <li class="footer__listitem">Feedback</li>
+                </ul>
+            </div>
+            <div class="footer__socialmedia">
+                <i class="footer__icons fa-brands fa-facebook fa-2x"></i>
+                <i class="footer__icons fa-brands fa-twitter fa-2x"></i>
+                <i class="footer__icons fa-brands fa-instagram fa-2x"></i>
+                <i class="footer__icons fa-brands fa-google fa-2x"></i>
+            </div>
+            <div class="footer__right">
+                <input class="footer__input" type="text" placeholder="Your email">
+                <button class="footer__btn">Login</button>
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
