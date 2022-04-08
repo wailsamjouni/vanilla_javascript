@@ -319,3 +319,137 @@
             padding-left: 2%;
         }
     }
+    /* Play video style */
+    
+    .play-body {
+        padding-left: 2%;
+    }
+    
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .left-sidebar {
+        flex-basis: 69%;
+    }
+    
+    .left-sidebar video {
+        width: 100%;
+    }
+    
+    .right-sidebar {
+        flex-basis: 30%;
+    }
+    
+    .right-video {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    
+    .right-sidebar a {
+        font-weight: 900;
+        color: black;
+        margin-right: 10px;
+        font-size: 14px;
+        margin-bottom: 7px;
+    }
+    
+    .right-video img {
+        width: 100%;
+    }
+    
+    .video-infos p {
+        margin-bottom: 7px;
+        color: gray;
+    }
+    
+    .left-sidebar .tags a {
+        color: #0000ff;
+        font-size: 14px;
+    }
+    
+    .left-sidebar h3 {
+        font-weight: 600;
+        font-size: 24px;
+    }
+    
+    .left-sidebar .video-like {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        font-size: 15px;
+        color: #5a5a5a;
+    }
+    
+    .left-sidebar .video-like a {
+        display: inline-flex;
+        align-items: center;
+        margin-right: 15px;
+    }
+    
+    .left-sidebar .video-like a img {
+        width: 25px;
+        margin-right: 10px;
+    }
+    
+    .left-sidebar hr {
+        border: none;
+        height: 1px;
+        margin: 10px 0;
+        background-color: #ccc;
+    }
+    
+    .channel {
+        justify-content: space-between;
+    }
+    
+    .channel img {
+        width: 60px;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+    
+    .channelinfos .chanelinfosright p {
+        margin-bottom: 5px;
+        font-weight: 600;
+    }
+    
+    .channelinfos .chanelinfosright span {
+        color: #5a5a5a;
+    }
+    
+    .channel .subscribe button {
+        border: none;
+        font-size: 25px;
+        font-weight: bold;
+        background-color: red;
+        color: white;
+        margin-right: 5px;
+        padding: 5px 20px;
+        text-transform: uppercase;
+        outline: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .description {
+        padding-left: 80px;
+        margin: 15px 0;
+    }
+    
+    .description p {
+        margin-bottom: 6px;
+        font-size: 15px;
+        color: #5a5a5a;
+    }
+    
+    .description hr {
+        border: none;
+        height: 1px;
+        margin: 10px 0;
+        background-color: #ccc;
+    }
+    /* Play video style end */
