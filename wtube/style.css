@@ -160,7 +160,7 @@
         width: 50%;
     }
     /* Sidebar style end */
-    /* Videos */
+    /* Body style */
     
     .body {
         padding-left: 17%;
@@ -223,4 +223,99 @@
     .body__topdeco button:hover {
         background-color: white;
         color: black;
+    }
+    /* Body style end */
+    /* Video style */
+    
+    .videocontainer {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        column-gap: 16px;
+        grid-row: 32px;
+    }
+    
+    .videolist {
+        margin-bottom: 32px;
+    }
+    
+    .videolist .videolist__img {
+        width: 100%;
+        border-radius: 5px;
+    }
+    
+    .videolist .videocontent {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+    
+    .videolist .videocontent .videoimg {
+        border-radius: 50%;
+        width: 35px;
+        margin-right: 10px;
+    }
+    
+    .videoright {
+        font-size: 15px;
+        color: #5a5a5a;
+    }
+    
+    .videoright a {
+        font-weight: 700;
+        display: block;
+        color: black;
+        margin-bottom: 5px;
+    }
+    
+    .videoright .video4k {
+        justify-content: space-between;
+        padding-right: 20px;
+    }
+    
+    .videoright .video4k h4 {
+        padding: 2px 5px;
+        background-color: red;
+        color: white;
+        border-radius: 5px;
+        font-size: 10px;
+    }
+    
+    .fitbody {
+        padding-left: 6%;
+    }
+    /* Video style end */
+    
+    @media (max-width: 900px) {
+        nav {
+            padding: 5px 15px;
+        }
+        .nav__menuicon {
+            display: none;
+        }
+        .nav__left .nav__logo {
+            width: 90px;
+        }
+        .nav__right img {
+            display: none;
+        }
+        .nav__right .nav__usericon {
+            display: block;
+        }
+        .nav__middle .nav__search input {
+            width: 100px;
+        }
+        .nav__middle .nav__voiceicon {
+            display: none;
+        }
+        .sidebar {
+            display: none;
+        }
+        .body__topdeco p {
+            font-size: 16px;
+        }
+        .body,
+        .fitbody {
+            padding-left: 2%;
+        }
     }
