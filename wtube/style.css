@@ -1,0 +1,226 @@
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        list-style: none;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    img {
+        cursor: pointer;
+    }
+    
+    .flex {
+        display: flex;
+        align-items: center;
+    }
+    /* Navbar style */
+    
+    nav {
+        justify-content: space-between;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background-color: #fff;
+        padding: 5px 30px;
+        height: 80px;
+    }
+    
+    .nav__left .nav__menuicon {
+        width: 30px;
+        margin-right: 25px;
+    }
+    
+    .nav__left .nav__logo {
+        width: 120px;
+    }
+    
+    .nav__middle .nav__search {
+        padding: 7px 15px;
+        background-color: #e9ecef;
+        border-radius: 20px;
+        margin-right: 25px;
+        border: 1px solid #adb5bd;
+    }
+    
+    .nav__middle .nav__search input {
+        width: 400px;
+        background-color: transparent;
+        border: none;
+        padding: 5px;
+        outline: none;
+    }
+    
+    .nav__middle .nav__search img {
+        width: 15px;
+    }
+    
+    .nav__middle .nav__voiceicon {
+        width: 18px;
+    }
+    
+    .nav__right img {
+        width: 30px;
+        margin-right: 20px;
+    }
+    
+    .nav__right .nav__usericon {
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        margin-right: 0;
+    }
+    /* Navbar style end */
+    /* Sidebar style */
+    
+    .sidebar {
+        padding: 50px 30px;
+        width: 15%;
+        height: calc(100vh - 80px);
+        position: fixed;
+        top: 60px;
+        background-color: #fff;
+    }
+    
+    .sidebar a {
+        cursor: pointer;
+        width: fit-content;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+    }
+    
+    .sidebar a img {
+        margin-right: 15px;
+        width: 25px;
+    }
+    
+    .sidebar a .sidebar__home {
+        color: red;
+    }
+    
+    .sidebar hr {
+        border: 0;
+        height: 1px;
+        width: 80%;
+        background-color: #ced4da;
+    }
+    
+    .subscription h3 {
+        font-size: 15px;
+        text-transform: uppercase;
+        margin: 20px 0;
+    }
+    
+    .subscription a {
+        margin-bottom: 20px;
+        width: fit-content;
+        flex-wrap: wrap;
+    }
+    
+    .subscription a img {
+        width: 30px;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+    
+    .sidebar p {
+        color: black;
+        font-weight: 600;
+    }
+    /* .sidebar::-webkit-scrollbar {
+    width: 5px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+} */
+    
+    .collapse {
+        width: 6%;
+    }
+    
+    .collapse a p {
+        display: none;
+    }
+    
+    .collapse .subscription h3 {
+        display: none;
+    }
+    
+    .collapse hr {
+        width: 50%;
+    }
+    /* Sidebar style end */
+    /* Videos */
+    
+    .body {
+        padding-left: 17%;
+        padding-right: 2%;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    
+    .body__top {
+        width: 100%;
+        position: relative;
+    }
+    
+    .body__top .body__playa {
+        width: 100%;
+        border-radius: 10px;
+        height: 350px;
+    }
+    
+    .body .body__topdeco {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 50%;
+        left: 50%;
+        gap: 30px;
+        transform: translate(-50%, -50%);
+    }
+    
+    .body__topdeco img {
+        width: 90px;
+        object-fit: cover;
+        border-radius: 50%;
+        background-color: transparent;
+    }
+    
+    .body__topdeco p {
+        font-size: 25px;
+        font-weight: 900;
+        background-color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+    
+    .body__topdeco button {
+        outline: none;
+        border: none;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px 20px;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+        border-radius: 5px;
+    }
+    
+    .body__topdeco button:hover {
+        background-color: white;
+        color: black;
+    }
