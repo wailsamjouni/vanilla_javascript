@@ -490,6 +490,12 @@
     
     .comment-top {
         margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .comment-top h5 {
+        color: gray;
     }
     
     .comment-top h4 {
@@ -511,6 +517,8 @@
         display: inline-flex;
         align-items: center;
         cursor: pointer;
+        font-size: 13px;
+        font-weight: 600;
     }
     
     .comment-icons {
@@ -540,7 +548,7 @@
     }
     
     .comment-reply p {
-        font-size: 16px;
+        font-size: 14px;
         color: #0000ff;
         font-weight: 600;
         margin-left: 10px;
