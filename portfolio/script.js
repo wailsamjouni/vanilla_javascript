@@ -6,7 +6,7 @@ const sections = document.querySelectorAll('.section');
 /////////////////////////////////////////////////////////////////////
 //////////////////////////////Tables////////////////////////////////
 const colorsArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F'];
-const colors = ['#216869', '#49A078', '#BA3F1D', '#FFBC42', '#1B998B', '#06d6a0', '#ff8fa3', '#ff206e', '#ff7d00', '#01befe'];
+const colors = ['#216869', '#49A078', '#BA3F1D', '#ee4266', '#1B998B', '#06d6a0', '#ff8fa3', '#ff206e', '#ff7d00', '#01befe'];
 
 /////////////////////////////////////////////////////////////////////
 ///////////////////////////Function Ready///////////////////////////
@@ -54,7 +54,7 @@ const cursor = document.querySelector('.cursor');
 document.addEventListener('mousemove', (event) => {
     cursor.setAttribute(
         "style",
-        "top: " + (event.pageY + 10) + "px; left: " + (event.pageX + 10) + "px;");
+        "top: " + (event.pageY - 50) + "px; left: " + (event.pageX - 50) + "px;");
 })
 
 document.addEventListener('click', () => {

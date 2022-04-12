@@ -87,6 +87,7 @@ header .header {
   height: 100%;
 }
 header .header__left {
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -108,8 +109,8 @@ header .header__left .profilImage {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  border-radius: 30px;
-  height: 90%;
+  border-radius: 20px;
+  height: 95%;
   width: 70%;
   margin-left: 64px;
   background-color: black;
@@ -118,7 +119,7 @@ header .header__left .profilImage {
 header .header__left .profilImage img {
   width: 100%;
   height: 100%;
-  border-radius: 30px;
+  border-radius: 20px;
   object-fit: cover;
   filter: grayscale(100%);
 }
@@ -397,7 +398,7 @@ header .header__right p {
   justify-content: center;
   align-items: center;
 }
-.portfolios__item .code .social a {
+.portfolios__item .code .social a:nth-child(1) {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -409,12 +410,12 @@ header .header__right p {
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
-.portfolios__item .code .social a .socialIconfab {
+.portfolios__item .code .social a:nth-child(1) .socialIconfab {
   font-size: 24px;
   color: var(--color-white);
   margin: 0 16px;
 }
-.portfolios__item .code .social button {
+.portfolios__item .code .social a:nth-child(2) {
   background-color: var(--color-primary);
   padding: 10px 20px;
   border-radius: 20px;
@@ -1028,7 +1029,7 @@ header .header__right p {
 }
 :root {
   --color-primary: #191d2b;
-  --color-secondary: #ee4266;
+  --color-secondary: #FFBC42;
   --color-white: #FFFFFF;
   --color-black: #000;
   --color-grey-zero: #f8f8f8;

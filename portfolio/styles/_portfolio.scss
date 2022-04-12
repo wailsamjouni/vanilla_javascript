@@ -37,7 +37,7 @@
             }
             .social {
                 @include flexBox(center, center);
-                a {
+                a:nth-child(1) {
                     @include flexBox(center, center);
                     background-color: var(--color-primary);
                     border-radius: 50%;
@@ -52,7 +52,7 @@
                         margin: 0 16px;
                     }
                 }
-                button {
+                a:nth-child(2) {
                     background-color: var(--color-primary);
                     padding: 10px 20px;
                     border-radius: 20px;
