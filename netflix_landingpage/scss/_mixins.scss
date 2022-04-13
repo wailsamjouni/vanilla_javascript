@@ -1,0 +1,28 @@
+@mixin flex($direction) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin grid($number, $fraction, $gap) {
+    display: grid;
+    grid-template-columns: repeat($number, $fraction);
+    grid-gap: $gap;
+}
+
+@mixin btn {
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+    margin-right: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
