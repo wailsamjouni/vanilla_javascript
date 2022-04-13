@@ -1,0 +1,79 @@
+.content {
+    height: calc(100vh - 80px);
+    background-color: #282C34;
+    .wrapper {
+        position: relative;
+        img {
+            width: 100%;
+            height: calc(100vh - 70px);
+            object-fit: cover;
+            background-color: transparent;
+            opacity: 0.7;
+        }
+        p {
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            color: white;
+            transform: translate(-50%, -50%);
+            font-size: 30px;
+            letter-spacing: 1.5px;
+            font-weight: 900;
+        }
+        a {
+            color: black;
+            text-transform: uppercase;
+            background-color: var(--primary-color);
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px 30px;
+            font-size: 30px;
+            font-weight: 600;
+            border-radius: 3px;
+            transition: all .4s ease-in-out;
+            &:hover {
+                color: var(--primary-color);
+                background-color: black;
+            }
+        }
+        .icon-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            background-color: black;
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all .6s ease-in-out;
+            .arrow {
+                font-size: 30px;
+                color: var(--primary-color);
+                font-weight: 900;
+                animation: anim .6s ease-in-out alternate infinite;
+            }
+            &:hover {
+                background-color: var(--primary-color);
+            }
+            &:hover .arrow {
+                color: black;
+            }
+        }
+    }
+}
+
+@keyframes anim {
+    0% {
+        transform: translateY(-8px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

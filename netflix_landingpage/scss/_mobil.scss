@@ -1,2 +1,4 @@
 @import './media';
-@include responsive-mode(mobil) {}
+@include responsive-mode(mobil) {
+    .header {}
+}
