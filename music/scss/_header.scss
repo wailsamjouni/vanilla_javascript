@@ -1,12 +1,18 @@
+@import './media';
 .header {
-    background-color: #20232A;
+    // background-color: #20232A;
     nav {
+        background-color: black;
+        z-index: 20;
+        position: sticky;
+        top: 0;
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 5px 144px;
         height: 70px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
         .left {
             display: flex;
             justify-content: center;
@@ -34,13 +40,14 @@
                 display: flex;
                 margin-right: 50px;
                 a {
-                    color: var(--primary-color);
+                    color: white;
+                    margin: 0 10px;
                     padding: 5px 15px;
                     font-size: 18px;
                     font-weight: 600;
                     transition: all .4s ease-in-out;
                     &:hover {
-                        color: white;
+                        color: var(--primary-color);
                     }
                 }
             }
@@ -50,13 +57,77 @@
                 a {
                     @include a-btn;
                     &:hover {
-                        background-color: black;
+                        // background-color: black;
                         color: var(--primary-color);
                     }
                 }
                 a:nth-child(1) {
                     margin-right: 25px;
                 }
+            }
+        }
+    }
+}
+
+// Responsive
+@include responsive-mode(tab-port) {
+    .header {
+        nav {
+            justify-content: center;
+            padding: 5px 24px;
+            .left {
+                img {
+                    width: 40px;
+                }
+                h1 {
+                    font-size: 30px;
+                    color: white;
+                    span {
+                        font-size: 25px;
+                    }
+                }
+            }
+            .right {
+                display: flex;
+                &__left {
+                    display: flex;
+                    margin-right: 30px;
+                    a {
+                        margin: 0 10px;
+                        padding: 5px 10px;
+                        font-size: 15px;
+                    }
+                }
+                &__right {
+                    margin-left: 30px;
+                    a {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include responsive-mode(mobil) {
+    .header {
+        nav {
+            justify-content: center;
+            padding: 5px 48px;
+            .left {
+                img {
+                    width: 30px;
+                }
+                h1 {
+                    font-size: 25px;
+                    color: white;
+                    span {
+                        font-size: 20px;
+                    }
+                }
+            }
+            .right {
+                display: none;
             }
         }
     }
