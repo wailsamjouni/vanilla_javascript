@@ -147,16 +147,21 @@ main {
 
 .dice {
     position: absolute;
-    top: 16.5rem;
+    top: 19.5rem;
     left: 50%;
     transform: translateX(-50%);
     height: 10rem;
-    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.4);
 }
 
 .player--winner .name {
-    font-weight: 700;
-    color: orangered;
+    font-weight: bold;
+    color: orange;
+}
+
+.player--winner {
+    background-color: gainsboro;
+    font-weight: bold;
 }
 
 .hidden {
