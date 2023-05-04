@@ -1,1 +1,1 @@
-# vanilla_javascript
+# Some small projects with vanilla JavaScript
