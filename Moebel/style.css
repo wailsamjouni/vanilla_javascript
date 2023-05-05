@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto+Mono:wght@200;300;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #dae4ff;
+  padding: 0 10%;
+}
+
+.nav {
+  width: 100%;
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav__logo {
+  flex: 1;
+  cursor: pointer;
+  width: 170px;
+  padding: 20px;
+}
+
+.nav__logo h2 {
+  background-color: #333;
+  width: fit-content;
+  padding: 5px 20px;
+  border-radius: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+.nav__logo h2 span {
+  font-size: 20px;
+  color: orange;
+  font-weight: 300;
+}
+
+button {
+  padding: 15px 40px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  font-size: 15px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav__menuicon {
+  width: 50px;
+  margin-left: 35px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+.body {
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.body__left,
+.body__right {
+  flex-basis: 50%;
+  overflow: hidden;
+}
+
+.body__right img {
+  width: 100%;
+  height: 100%;
+}
+
+.body__left {
+  padding: 8% 5%;
+  /* display: flex;
+  flex-direction: column;
+  gap: 40px; */
+}
+
+.body__left h1 {
+  font-size: 60px;
+  line-height: 70px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: #333;
+}
+
+.body__left p {
+  margin: 50px 0;
+  color: #777;
+}
+
+ul {
+  position: absolute;
+  bottom: 20px;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  border-radius: 20px;
+}
+
+ul li {
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background-color: #bfbfbf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+ul .active {
+  background-color: #333;
+}
+
+.anim {
+  animation: zoomout 0.7s linear 1;
+}
+
+@keyframes zoomout {
+  0% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
