@@ -1,395 +1,655 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <link rel="stylesheet" href="./build/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./build/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+      integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
 
-<body class="body">
+  <body class="body">
     <div class="setting">
-        <i class="setting__icon fa-solid fa-gear fa-2x"></i>
+      <i class="setting__icon fa-solid fa-gear fa-2x"></i>
     </div>
-    <div class="overlay hidden">
-    </div>
+    <div class="overlay hidden"></div>
     <div class="palette hidden">
-        <span class="palette__toggle color1"></span>
-        <span class="palette__toggle color2"></span>
-        <span class="palette__toggle color3"></span>
-        <span class="palette__toggle color4"></span>
-        <span class="palette__toggle color5"></span>
-        <span class="palette__toggle color6"></span>
-        <span class="palette__toggle color7"></span>
-        <span class="palette__toggle color8"></span>
-        <span class="palette__toggle color9"></span>
-        <span class="palette__toggle color10"></span>
-        <div class="palette__close">
-            <i class="palette__icon fa-solid fa-xmark fa-2x"></i>
-        </div>
-        <h1>Choose your favorite <span>Theme.</span></h1>
-        <h2 id="randomize">Random Color</h2>
+      <span class="palette__toggle color1"></span>
+      <span class="palette__toggle color2"></span>
+      <span class="palette__toggle color3"></span>
+      <span class="palette__toggle color4"></span>
+      <span class="palette__toggle color5"></span>
+      <span class="palette__toggle color6"></span>
+      <span class="palette__toggle color7"></span>
+      <span class="palette__toggle color8"></span>
+      <span class="palette__toggle color9"></span>
+      <span class="palette__toggle color10"></span>
+      <div class="palette__close">
+        <i class="palette__icon fa-solid fa-xmark fa-2x"></i>
+      </div>
+      <h1>Choose your favorite <span>Theme.</span></h1>
+      <h2 id="randomize">Random Color</h2>
     </div>
     <div class="cursor"></div>
     <div class="theme">
-        <span></span>
+      <span></span>
     </div>
     <!-- Header -->
     <header class="section first activeSection" id="home">
-        <div class="header">
-            <div class="header__left">
-                <div class="rectangle"></div>
-                <div class="profilImage">
-                    <!-- <img src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt=""> -->
-                    <img src="./bild.JPG" alt="">
-                </div>
-            </div>
-            <div class="header__right">
-                <h1>
-                    Hi, I'm <span>Wail Samjouni.</span> A Web Designer and Developer.
-                </h1>
-                <p>
-                    I'm a software engineer specialised in frontend and backend development for complex scalable web apps. Want to know how I may help your project? Check out my project
-                </p>
-                <div class="cvBtn">
-                    <a href="./cv.pdf" download>
-                        <span>Download CV</span>
-                        <span><i class="fas fa-download"></i></span>
-                    </a>
-                </div>
-            </div>
+      <div class="header">
+        <div class="header__left">
+          <div class="rectangle"></div>
+          <div class="profilImage">
+            <!-- <img src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt=""> -->
+            <img src="./bild.JPG" alt="" />
+          </div>
         </div>
+        <div class="header__right">
+          <h1>
+            Hi, I'm <span>Wail Samjouni.</span> A Web Designer and Developer.
+          </h1>
+          <p>
+            I'm a software engineer specialised in frontend and backend
+            development for complex scalable web apps. Want to know how I may
+            help your project? Check out my project
+          </p>
+          <div class="cvBtn">
+            <a href="./CV_Deutsch.pdf" download>
+              <span>Download CV</span>
+              <span><i class="fas fa-download"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
     </header>
     <!-- Sections -->
     <main>
-        <!-- Section 2 -->
-        <section class="section second about" id="about">
-            <div class="sectionTitle">
-                <h2>About <span>me</span><span>my stats</span></h2>
+      <!-- Section 2 -->
+      <section class="section second about" id="about">
+        <div class="sectionTitle">
+          <h2>About <span>me</span><span>my stats</span></h2>
+        </div>
+        <div class="aboutSection">
+          <div class="aboutSection__left">
+            <h4>Information About me</h4>
+            <p>
+              I'm a software engineer specialised in frontend and backend
+              development for complex scalable web apps. Want to know how I may
+              help your project? Check out my project portfolio and online
+              resume.
+            </p>
+            <div class="cvBtn">
+              <a href="CV-up.pdf" download>
+                <span>Download CV</span>
+                <span><i class="fas fa-download"></i></span>
+              </a>
             </div>
-            <div class="aboutSection">
-                <div class="aboutSection__left">
-                    <h4>Information About me</h4>
-                    <p>
-                        I'm a software engineer specialised in frontend and backend development for complex scalable web apps. Want to know how I may help your project? Check out my project portfolio and online resume.
-                    </p>
-                    <div class="cvBtn">
-                        <a href="CV-up.pdf" download>
-                            <span>Download CV</span>
-                            <span><i class="fas fa-download"></i></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="aboutSection__right">
-                    <div class="about__item">
-                        <div>
-                            <p class="large-text">1</p>
-                            <p class="small-text">Projects <br /> Completed</p>
-                        </div>
-                    </div>
-                    <div class="about__item">
-                        <div>
-                            <p class="large-text">1</p>
-                            <p class="small-text">Years of <br /> experience</p>
-                        </div>
-                    </div>
-                    <div class="about__item">
-                        <div>
-                            <p class="large-text">0</p>
-                            <p class="small-text">Happy <br /> Clients</p>
-                        </div>
-                    </div>
-                    <div class="about__item">
-                        <div>
-                            <p class="large-text">0</p>
-                            <p class="small-text">Customer <br /> reviews</p>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="aboutSection__right">
+            <div class="about__item">
+              <div>
+                <p class="large-text">1</p>
+                <p class="small-text">
+                  Projects <br />
+                  Completed
+                </p>
+              </div>
             </div>
-            <div class="aboutSection__skills">
-                <h4 class="title__component">My Skills</h4>
-                <div class="progress-bars">
-                    <div class="bar">
-                        <p>html5</p>
-                        <div class="progressContainer">
-                            <p class="prog-text">80%</p>
-                            <div class="language">
-                                <span class="html"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bar">
-                        <p>css3</p>
-                        <div class="progressContainer">
-                            <p class="prog-text">85%</p>
-                            <div class="language">
-                                <span class="css"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bar">
-                        <p>javascript</p>
-                        <div class="progressContainer">
-                            <p class="prog-text">70%</p>
-                            <div class="language">
-                                <span class="js"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bar">
-                        <p>ReactJS</p>
-                        <div class="progressContainer">
-                            <p class="prog-text">70%</p>
-                            <div class="language">
-                                <span class="react"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bar">
-                        <p>sass</p>
-                        <div class="progressContainer">
-                            <p class="prog-text">75%</p>
-                            <div class="language">
-                                <span class="sass"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bar">
-                        <p>tailwind css</p>
-                        <div class="progressContainer">
-                            <p class="prog-text">70%</p>
-                            <div class="language">
-                                <span class="tailwind"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bar">
-                        <p>bootstrap</p>
-                        <div class="progressContainer">
-                            <p class="prog-text">75%</p>
-                            <div class="language">
-                                <span class="boot"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bar">
-                        <p>java</p>
-                        <div class="progressContainer">
-                            <p class="prog-text">70%</p>
-                            <div class="language">
-                                <span class="java"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="about__item">
+              <div>
+                <p class="large-text">1</p>
+                <p class="small-text">
+                  Years of <br />
+                  experience
+                </p>
+              </div>
             </div>
-            <h4 class="title__component">My Timeline</h4>
-            <!-- Experience -->
-            <div class="timeline">
-                <div class="timeline__wrapper">
-                    <div class="timeline__icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="timeline__duration">2011 - 2013</p>
-                    <h5>Training<span> - Computer network technology</span></h5>
-                    <p>
-                        Institute of Special Applied Technologies in Rabat.
-                    </p>
-                </div>
-                <div class="timeline__wrapper">
-                    <div class="timeline__icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="timeline__duration">2014 - 2015</p>
-                    <h5>BSc.<span>  Network security and computer systems</span></h5>
-                    <p>
-                        Institute of Engineering in Rabat.
-                    </p>
-                </div>
-                <div class="timeline__wrapper">
-                    <div class="timeline__icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="timeline__duration">2018 - Present</p>
-                    <h5>BSc.<span> Computer science</span></h5>
-                    <p>
-                        TU Dortmund in Dortmund.
-                    </p>
-                </div>
-                <div class="timeline__wrapper">
-                    <div class="timeline__icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="timeline__duration">Jan 2013 - Mar 2013</p>
-                    <h5>Internship<span> Planéte Conseil</span></h5>
-                    <p>
-                        Installation of computer equipment. Computer equipment maintenance.
-                    </p>
-                </div>
-                <div class="timeline__wrapper">
-                    <div class="timeline__icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="timeline__duration">Mai 2014 - Jul 2014</p>
-                    <h5>Internship<span> CBI</span></h5>
-                    <p>
-                        Installation of the OS (Linux ,Windows). Installation of printers and repair of computers.
-                    </p>
-                </div>
-                <div class="timeline__wrapper">
-                    <div class="timeline__icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="timeline__duration">Mar 2015 - Jul 2015</p>
-                    <h5>Internship<span> Dimension Data</span></h5>
-                    <p>
-                        Installation of access control servers ACS Cisco, Radius, Tacacs+. Die Installation der virtualisierten Server. Diagnosis switches and routers (Cisco). Installing a wireless architecture Cisco Wireless LAN. Controller, AP.
-                    </p>
-                </div>
+            <div class="about__item">
+              <div>
+                <p class="large-text">0</p>
+                <p class="small-text">
+                  Happy <br />
+                  Clients
+                </p>
+              </div>
             </div>
-            <!--  -->
-        </section>
-        <!-- Section 2 -->
-        <section class="section third portfolio" id="portfolio">
-            <div class="sectionTitle">
-                <h2>My <span>Portfolio</span><span>My Work</span></h2>
+            <div class="about__item">
+              <div>
+                <p class="large-text">0</p>
+                <p class="small-text">
+                  Customer <br />
+                  reviews
+                </p>
+              </div>
             </div>
-            <div class="portfolios">
-                <div class="portfolios__item">
-                    <div class="image">
-                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80" alt="">
-                    </div>
-                    <div class="code">
-                        <h3>Vidtube</h3>
-                        <div class="social">
-                            <a href="https://github.com/wailsamjouni/vanilla_javascript/tree/master/wtube">
-                                <i class="socialIconfab fab fa-github"></i>
-                            </a>
-                            <!-- <button href="https://sneakers-wail.netlify.app">See Live</button> -->
-                            <a href="https://vidtube-wail.netlify.app">See Live</a>
-                        </div>
-                    </div>
+          </div>
+        </div>
+        <div class="aboutSection__skills">
+          <h4 class="title__component">My Skills</h4>
+          <div class="progress-bars">
+            <div class="bar">
+              <p>html5</p>
+              <div class="progressContainer">
+                <p class="prog-text">80%</p>
+                <div class="language">
+                  <span class="html"></span>
                 </div>
-                <div class="portfolios__item">
-                    <div class="image">
-                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80" alt="">
-                    </div>
-                    <div class="code">
-                        <h3>Sneakers</h3>
-                        <div class="social">
-                            <a href="https://github.com/wailsamjouni/vanilla_javascript/tree/master/Sneakers">
-                                <i class="socialIconfab fab fa-github"></i>
-                            </a>
-                            <!-- <button href="https://sneakers-wail.netlify.app">See Live</button> -->
-                            <a href="https://sneakers-wail.netlify.app">See Live</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolios__item">
-                    <div class="image">
-                        <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
-                    </div>
-                    <div class="code">
-                        <h3>Clock Vanilla JS</h3>
-                        <div class="social">
-                            <a href="https://github.com/wailsamjouni/vanilla_javascript/tree/master/clock">
-                                <i class="socialIconfab fab fa-github"></i>
-                            </a>
-                            <a href="https://clock-wail.netlify.app">See Live</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolios__item">
-                    <div class="image">
-                        <img src="https://images.unsplash.com/photo-1520085601670-ee14aa5fa3e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
-                    </div>
-                    <div class="code">
-                        <h3>Project Source</h3>
-                        <div class="BEM">
-                            <a href="https://github.com/wailsamjouni/vanilla_javascript/tree/master/BEM">
-                                <i class="socialIconfab fab fa-github"></i>
-                            </a>
-                            <a href="https://bem-wail.netlify.app">See Live</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolios__item">
-                    <div class="image">
-                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt="">
-                    </div>
-                    <div class="code">
-                        <h3>TODO List</h3>
-                        <div class="social">
-                            <a href="https://github.com/wailsamjouni/vanilla_javascript/tree/master/todo_list">
-                                <i class="socialIconfab fab fa-github"></i>
-                            </a>
-                            <a href="https://todo-list-wail.netlify.app">See Live</a>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-
-        </section>
-        <section class="section fourth blogs" id="blogs"></section>
-        <section class="section fivth contact" id="contact">
-            <div class="contact__wrapper">
-                <div class="sectionTitle">
-                    <h2>Contact <span>Me</span><span>Contact</span></h2>
+            <div class="bar">
+              <p>css3</p>
+              <div class="progressContainer">
+                <p class="prog-text">85%</p>
+                <div class="language">
+                  <span class="css"></span>
                 </div>
-                <div class="contact__right">
-                    <form method="POST" action="#message">
-                        <div class="input ">
-                            <input type="text" required placeholder="YOUR NAME">
-                            <input type="email" required placeholder="YOUR EMAIL">
-                        </div>
-                        <div class="input">
-                            <input type="text" required placeholder="ENTER SUBJECT">
-                        </div>
-                        <div class="input">
-                            <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
-                        </div>
-                        <div class="">
-                            <button type="submit" href="#">
-                                <span>Send</span>
-                                <span><i class="fa-solid fa-paper-plane"></i></span>
-                            </button>
-                        </div>
-                    </form>
-                </div>
+              </div>
             </div>
-        </section>
+            <div class="bar">
+              <p>javascript</p>
+              <div class="progressContainer">
+                <p class="prog-text">70%</p>
+                <div class="language">
+                  <span class="js"></span>
+                </div>
+              </div>
+            </div>
+            <div class="bar">
+              <p>ReactJS</p>
+              <div class="progressContainer">
+                <p class="prog-text">70%</p>
+                <div class="language">
+                  <span class="react"></span>
+                </div>
+              </div>
+            </div>
+            <div class="bar">
+              <p>sass</p>
+              <div class="progressContainer">
+                <p class="prog-text">75%</p>
+                <div class="language">
+                  <span class="sass"></span>
+                </div>
+              </div>
+            </div>
+            <div class="bar">
+              <p>tailwind css</p>
+              <div class="progressContainer">
+                <p class="prog-text">70%</p>
+                <div class="language">
+                  <span class="tailwind"></span>
+                </div>
+              </div>
+            </div>
+            <div class="bar">
+              <p>bootstrap</p>
+              <div class="progressContainer">
+                <p class="prog-text">75%</p>
+                <div class="language">
+                  <span class="boot"></span>
+                </div>
+              </div>
+            </div>
+            <div class="bar">
+              <p>java</p>
+              <div class="progressContainer">
+                <p class="prog-text">70%</p>
+                <div class="language">
+                  <span class="java"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h4 class="title__component">My Timeline</h4>
+        <!-- Experience -->
+        <div class="timeline">
+          <div class="timeline__wrapper">
+            <div class="timeline__icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="timeline__duration">2011 - 2013</p>
+            <h5>Training<span> - Computer network technology</span></h5>
+            <p>Institute of Special Applied Technologies in Rabat.</p>
+          </div>
+          <div class="timeline__wrapper">
+            <div class="timeline__icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="timeline__duration">2014 - 2015</p>
+            <h5>BSc.<span> Network security and computer systems</span></h5>
+            <p>Institute of Engineering in Rabat.</p>
+          </div>
+          <div class="timeline__wrapper">
+            <div class="timeline__icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="timeline__duration">2018 - Present</p>
+            <h5>BSc.<span> Computer science</span></h5>
+            <p>TU Dortmund in Dortmund.</p>
+          </div>
+          <div class="timeline__wrapper">
+            <div class="timeline__icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="timeline__duration">Jan 2013 - Mar 2013</p>
+            <h5>Internship<span> Planéte Conseil</span></h5>
+            <p>
+              Installation of computer equipment. Computer equipment
+              maintenance.
+            </p>
+          </div>
+          <div class="timeline__wrapper">
+            <div class="timeline__icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="timeline__duration">Mai 2014 - Jul 2014</p>
+            <h5>Internship<span> CBI</span></h5>
+            <p>
+              Installation of the OS (Linux ,Windows). Installation of printers
+              and repair of computers.
+            </p>
+          </div>
+          <div class="timeline__wrapper">
+            <div class="timeline__icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="timeline__duration">Mar 2015 - Jul 2015</p>
+            <h5>Internship<span> Dimension Data</span></h5>
+            <p>
+              Installation of access control servers ACS Cisco, Radius, Tacacs+.
+              Die Installation der virtualisierten Server. Diagnosis switches
+              and routers (Cisco). Installing a wireless architecture Cisco
+              Wireless LAN. Controller, AP.
+            </p>
+          </div>
+        </div>
+        <!--  -->
+      </section>
+      <!-- Section 2 -->
+      <section class="section third portfolio" id="portfolio">
+        <div class="sectionTitle">
+          <h2>My <span>Portfolio</span><span>My Work</span></h2>
+        </div>
+        <div class="portfolios">
+          <div class="portfolios__item">
+            <div class="image">
+              <img
+                src="https://assets.cdn.moviepilot.de/files/603f0c884f66e18724692ef18ecc52e07e50986299ddb63253ede5670147/fill/1200/576/netflix%20logo.jpg"
+                alt=""
+              />
+            </div>
+            <div class="code">
+              <h3>Netflix Landing Page</h3>
+              <div class="social">
+                <a
+                  href="https://github.com/wailsamjouni/vanilla_javascript/tree/master/netflix_landingpage"
+                >
+                  <i class="socialIconfab fab fa-github"></i>
+                </a>
+                <a href="https://netflix-landing-p.netlify.app/">See Live</a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolios__item">
+            <div class="image">
+              <img
+                src="https://easydrawingguides.com/wp-content/uploads/2017/03/How-to-draw-a-cartoon-pig-20.png"
+                alt=""
+              />
+            </div>
+            <div class="code">
+              <h3>Pig Game</h3>
+              <div class="social">
+                <a
+                  href="https://github.com/wailsamjouni/vanilla_javascript/tree/master/Pig%20game"
+                >
+                  <i class="socialIconfab fab fa-github"></i>
+                </a>
+                <a href="https://piggame-logic.netlify.app/">See Live</a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolios__item">
+            <div class="image">
+              <img
+                src="https://assets-global.website-files.com/620d42e86cb8ec4d0839e59d/622f95de676fccd3d9f0483b_Color%20Palettes%20Image_0314122.jpg"
+                alt=""
+              />
+            </div>
+            <div class="code">
+              <h3>Color Changer</h3>
+              <div class="social">
+                <a
+                  href="https://github.com/wailsamjouni/vanilla_javascript/tree/master/Color_changer"
+                >
+                  <i class="socialIconfab fab fa-github"></i>
+                </a>
+                <a href="https://color-changer-palette.netlify.app/"
+                  >See Live</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="portfolios__item">
+            <div class="image">
+              <img
+                src="https://btc-motors.co.uk/7295-tm_large_default/tribo-49cc.jpg"
+                alt=""
+              />
+            </div>
+            <div class="code">
+              <h3>Bike Landing Page</h3>
+              <div class="social">
+                <a
+                  href="https://github.com/wailsamjouni/vanilla_javascript/tree/master/Bikes"
+                >
+                  <i class="socialIconfab fab fa-github"></i>
+                </a>
+                <a href="https://bikes-landing.netlify.app/#">See Live</a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolios__item">
+            <div class="image">
+              <img
+                src="https://m.media-amazon.com/images/G/03/gc/designs/livepreview/blue_hero_logo_noto_email_v2016_de-main._CB467020238_.png"
+                alt=""
+              />
+            </div>
+            <div class="code">
+              <h3>Amazon clone</h3>
+              <div class="social">
+                <a
+                  href="https://github.com/wailsamjouni/amazon_clone/tree/master/amazon_clone"
+                >
+                  <i class="socialIconfab fab fa-github"></i>
+                </a>
+                <a href="https://clone-2d061.firebaseapp.com/">See Live</a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolios__item">
+            <div class="image">
+              <img
+                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+                alt=""
+              />
+            </div>
+            <div class="code">
+              <h3>Vidtube</h3>
+              <div class="social">
+                <a
+                  href="https://github.com/wailsamjouni/vanilla_javascript/tree/master/wtube"
+                >
+                  <i class="socialIconfab fab fa-github"></i>
+                </a>
+                <!-- <button href="https://sneakers-wail.netlify.app">See Live</button> -->
+                <a href="https://vidtube-wail.netlify.app">See Live</a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolios__item">
+            <div class="image">
+              <img
+                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+                alt=""
+              />
+            </div>
+            <div class="code">
+              <h3>Sneakers</h3>
+              <div class="social">
+                <a
+                  href="https://github.com/wailsamjouni/vanilla_javascript/tree/master/Sneakers"
+                >
+                  <i class="socialIconfab fab fa-github"></i>
+                </a>
+                <!-- <button href="https://sneakers-wail.netlify.app">See Live</button> -->
+                <a href="https://sneakers-wail.netlify.app">See Live</a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolios__item">
+            <div class="image">
+              <img
+                src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt=""
+              />
+            </div>
+            <div class="code">
+              <h3>Clock Vanilla JS</h3>
+              <div class="social">
+                <a
+                  href="https://github.com/wailsamjouni/vanilla_javascript/tree/master/clock"
+                >
+                  <i class="socialIconfab fab fa-github"></i>
+                </a>
+                <a href="https://clock-wail.netlify.app">See Live</a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolios__item">
+            <div class="image">
+              <img
+                src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+                alt=""
+              />
+            </div>
+            <div class="code">
+              <h3>TODO List</h3>
+              <div class="social">
+                <a
+                  href="https://github.com/wailsamjouni/vanilla_javascript/tree/master/todo_list"
+                >
+                  <i class="socialIconfab fab fa-github"></i>
+                </a>
+                <a href="https://todo-list-wail.netlify.app">See Live</a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolios__item">
+            <div class="image">
+              <img
+                src="https://i0.wp.com/blog.alexdevero.com/wp-content/uploads/2020/09/07-09-20-getting-started-with-the-javascript-fetch-api-blog.jpg?w=1024&ssl=1"
+                alt=""
+              />
+            </div>
+            <div class="code">
+              <h3>Fetch API</h3>
+              <div class="social">
+                <a
+                  href="https://github.com/wailsamjouni/vanilla_javascript/tree/master/fetch_api"
+                >
+                  <i class="socialIconfab fab fa-github"></i>
+                </a>
+                <a href="https://fetch-data-api.netlify.app/">See Live</a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolios__item">
+            <div class="image">
+              <img
+                src="https://img.freepik.com/premium-vector/financial-arrows-up-down-green-red-arrow-increase-decrease_820464-1189.jpg?w=1800"
+                alt=""
+              />
+            </div>
+            <div class="code">
+              <h3>Counter</h3>
+              <div class="social">
+                <a
+                  href="https://github.com/wailsamjouni/vanilla_javascript/tree/master/increase_descrease"
+                >
+                  <i class="socialIconfab fab fa-github"></i>
+                </a>
+                <a href="https://counter-in-de.netlify.app/">See Live</a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolios__item">
+            <div class="image">
+              <img
+                src="https://hips.hearstapps.com/hmg-prod/images/index-luxuryfurniture-1659361945.jpg?crop=1.00xw:1.00xh;0,0&resize=1200:*"
+                alt=""
+              />
+            </div>
+            <div class="code">
+              <h3>Furniture</h3>
+              <div class="social">
+                <a
+                  href="https://github.com/wailsamjouni/vanilla_javascript/tree/master/Moebel"
+                >
+                  <i class="socialIconfab fab fa-github"></i>
+                </a>
+                <a href="https://furniture-landing-p.netlify.app/">See Live</a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolios__item">
+            <div class="image">
+              <img
+                src="https://cdn.thewirecutter.com/wp-content/media/2023/04/budgetandroidphones-2048px-2x1-1.jpg?auto=webp&quality=75&crop=2:1&width=980&dpr=2"
+                alt=""
+              />
+            </div>
+            <div class="code">
+              <h3>Phone</h3>
+              <div class="social">
+                <a
+                  href="https://github.com/wailsamjouni/vanilla_javascript/tree/master/phone"
+                >
+                  <i class="socialIconfab fab fa-github"></i>
+                </a>
+                <a href="https://phone-landing-p.netlify.app/">See Live</a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolios__item">
+            <div class="image">
+              <img
+                src="https://i0.wp.com/www.cssscript.com/wp-content/uploads/2018/02/mcx-dialog-mobile.png?fit=424%2C306&ssl=1"
+                alt=""
+              />
+            </div>
+            <div class="code">
+              <h3>Popup Modal</h3>
+              <div class="social">
+                <a
+                  href="https://github.com/wailsamjouni/vanilla_javascript/tree/master/Popup"
+                >
+                  <i class="socialIconfab fab fa-github"></i>
+                </a>
+                <a href="https://pop-up-modal.netlify.app/">See Live</a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolios__item">
+            <div class="image">
+              <img
+                src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*u2fa0tEmnwftUi9omquHaw.png"
+                alt=""
+              />
+            </div>
+            <div class="code">
+              <h3>Responsive Navbar</h3>
+              <div class="social">
+                <a
+                  href="https://github.com/wailsamjouni/vanilla_javascript/tree/master/responsive_navbar"
+                >
+                  <i class="socialIconfab fab fa-github"></i>
+                </a>
+                <a href="https://respo-nav.netlify.app/">See Live</a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolios__item">
+            <div class="image">
+              <img
+                src="https://springerfachmedien.azureedge.net/sfm-trucker/thumb_750x422/media/5172/tesla-model-3.49395142.jpg"
+                alt=""
+              />
+            </div>
+            <div class="code">
+              <h3>Tesla Landing Page</h3>
+              <div class="social">
+                <a
+                  href="https://github.com/wailsamjouni/vanilla_javascript/tree/master/Tesla_landing_page"
+                >
+                  <i class="socialIconfab fab fa-github"></i>
+                </a>
+                <a href="https://tes-la.netlify.app/#">See Live</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section fourth blogs" id="blogs"></section>
+      <section class="section fivth contact" id="contact">
+        <div class="contact__wrapper">
+          <div class="sectionTitle">
+            <h2>Contact <span>Me</span><span>Contact</span></h2>
+          </div>
+          <div class="contact__right">
+            <form method="POST" action="#message">
+              <div class="input">
+                <input type="text" required placeholder="YOUR NAME" />
+                <input type="email" required placeholder="YOUR EMAIL" />
+              </div>
+              <div class="input">
+                <input type="text" required placeholder="ENTER SUBJECT" />
+              </div>
+              <div class="input">
+                <textarea
+                  name=""
+                  id=""
+                  cols="15"
+                  rows="8"
+                  placeholder="Message Here..."
+                ></textarea>
+              </div>
+              <div class="">
+                <button type="submit" href="#">
+                  <span>Send</span>
+                  <span><i class="fa-solid fa-paper-plane"></i></span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- Icons controller -->
     <div class="container">
-        <div class="icons style__icon1 active" data-id="home">
-            <i class="fa-solid fa-house" id="billie"></i>
-        </div>
-        <div class="icons style__icon2" data-id="about">
-            <i class="fa-solid fa-user "></i>
-        </div>
-        <div class="icons style__icon3" data-id="portfolio">
-            <i class="fa-solid fa-briefcase "></i>
-        </div>
-        <div class="icons style__icon4 " data-id="blogs">
-            <i class="fa-solid fa-newspaper"></i>
-        </div>
-        <div class="icons style__icon5 " data-id="contact">
-            <i class="fa-solid fa-envelope "></i>
-        </div>
+      <div class="icons style__icon1 active" data-id="home">
+        <i class="fa-solid fa-house" id="billie"></i>
+      </div>
+      <div class="icons style__icon2" data-id="about">
+        <i class="fa-solid fa-user"></i>
+      </div>
+      <div class="icons style__icon3" data-id="portfolio">
+        <i class="fa-solid fa-briefcase"></i>
+      </div>
+      <div class="icons style__icon4" data-id="blogs">
+        <i class="fa-solid fa-newspaper"></i>
+      </div>
+      <div class="icons style__icon5" data-id="contact">
+        <i class="fa-solid fa-envelope"></i>
+      </div>
     </div>
 
-    <script src="script.js">
-    </script>
-
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
